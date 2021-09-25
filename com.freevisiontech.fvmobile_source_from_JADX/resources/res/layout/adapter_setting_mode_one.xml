@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="50dp">
+        <ImageView android:id="@+id/img_scan" android:layout_width="20dp" android:layout_height="20dp" android:layout_marginLeft="20dp" android:src="@mipmap/qingchuhuancun" android:layout_centerVertical="true"/>
+        <TextView android:textSize="16sp" android:id="@+id/txt_mode" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:text="mode" android:layout_toLeftOf="@+id/img_next" android:layout_toRightOf="@+id/img_scan" android:layout_centerVertical="true"/>
+        <TextView android:textSize="@dimen/text_size14" android:id="@+id/txt_info" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_toStartOf="@+id/img_next"/>
+        <ImageView android:id="@+id/img_next" android:layout_width="15dp" android:layout_height="15dp" android:layout_marginLeft="10dp" android:layout_marginRight="20dp" android:src="@mipmap/ic_right" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+    </RelativeLayout>
+</LinearLayout>

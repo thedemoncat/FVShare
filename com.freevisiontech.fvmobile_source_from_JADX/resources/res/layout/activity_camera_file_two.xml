@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include android:id="@+id/top_title" layout="@layout/layout_file_title"/>
+    <include layout="@layout/layout_file_title_photo_video"/>
+    <android.support.p001v4.view.ViewPager android:id="@+id/file_view_pager" android:layout_width="match_parent" android:layout_height="1dp" android:layout_weight="1"/>
+    <RelativeLayout android:gravity="center_vertical" android:id="@+id/main_share_delete" android:background="@color/color_white" android:visibility="gone" android:layout_width="match_parent" android:layout_height="49dp" android:layout_alignParentBottom="true">
+        <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true">
+            <ImageView android:id="@+id/text_main_share" android:background="@drawable/file_share_button_selector_none" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="25dp"/>
+            <ImageView android:id="@+id/text_main_baocun" android:background="@drawable/file_baocun_button_selector" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="30dp"/>
+        </LinearLayout>
+        <ImageView android:id="@+id/text_main_camera_delete" android:background="@drawable/file_delete_button_selector_none" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="30dp" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+    </RelativeLayout>
+</LinearLayout>

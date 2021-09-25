@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center" android:orientation="vertical" android:layout_width="110dp" android:layout_height="110dp">
+    <ImageView android:layout_gravity="center" android:id="@+id/act_video_editing_music_recycle_item_check_no" android:background="@mipmap/xml_radiobutton_video_editing_music_bg_img1" android:layout_width="100dp" android:layout_height="100dp" android:layout_marginLeft="5dp" android:layout_marginRight="5dp"/>
+    <ImageView android:layout_gravity="center" android:id="@+id/act_video_editing_music_recycle_item_check_ok" android:background="@mipmap/xml_radiobutton_video_editing_music_bg_img1" android:visibility="gone" android:layout_width="110dp" android:layout_height="110dp" android:layout_marginLeft="5dp" android:layout_marginRight="5dp"/>
+</LinearLayout>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="@color/transparent" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:orientation="vertical" android:id="@+id/rl_upgrade_pre" android:background="@drawable/free_dialog_bg" android:visibility="visible" android:layout_width="325dp" android:layout_height="178dp" android:layout_centerInParent="true">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="26dp" android:layout_marginBottom="46dp" android:layout_alignParentTop="true" android:layout_centerHorizontal="true">
+            <TextView android:textSize="@dimen/text_size18" android:textStyle="bold" android:textColor="@color/color_black4" android:layout_gravity="center" android:id="@+id/tv_text_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/label_ptz_motor_dormancy_sleep_s" android:layout_centerHorizontal="true"/>
+            <RelativeLayout android:gravity="center" android:layout_width="match_parent" android:layout_height="match_parent">
+                <ScrollView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_centerInParent="true">
+                    <TextView android:textSize="15dp" android:textColor="@color/color_black4" android:gravity="center" android:id="@+id/tv_text_body" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="45dp" android:layout_marginRight="45dp" android:text="@string/label_ptz_force_body"/>
+                </ScrollView>
+            </RelativeLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="46dp" android:layout_alignParentBottom="true">
+            <View android:id="@+id/line1" android:background="@color/color_black3" android:layout_width="match_parent" android:layout_height="2px" android:layout_above="@+id/ll_upgrade_btn_pre"/>
+            <LinearLayout android:orientation="horizontal" android:id="@+id/ll_upgrade_btn_pre" android:layout_width="match_parent" android:layout_height="45dp">
+                <Button android:textSize="16dp" android:textStyle="bold" android:textColor="@color/color_black4" android:gravity="center" android:id="@+id/yes" android:background="@null" android:visibility="visible" android:layout_width="0dp" android:layout_height="match_parent" android:text="@string/label_sure" android:singleLine="true" android:layout_weight="1" android:textAllCaps="false"/>
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

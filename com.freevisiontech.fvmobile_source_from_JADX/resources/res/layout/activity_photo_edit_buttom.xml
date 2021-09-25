@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:id="@+id/act_edit_buttom" android:background="@color/white" android:layout_width="match_parent" android:layout_height="167dp" android:layout_alignParentBottom="true">
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="167dp">
+        <HorizontalScrollView android:layout_gravity="center_vertical" android:scrollbars="none" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:id="@+id/edit_lvjing_button" android:layout_width="65dp" android:layout_height="wrap_content" android:layout_marginLeft="25dp">
+                    <LinearLayout android:gravity="center" android:layout_gravity="center_horizontal" android:layout_width="35dp" android:layout_height="35dp">
+                        <ImageView android:background="@mipmap/ic_edit_lvjing" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                    </LinearLayout>
+                    <TextView android:textColor="@color/color_white08" android:gravity="center" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15dp" android:text="@string/file_edit_a_filter"/>
+                </LinearLayout>
+                <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:id="@+id/edit_meirong_button" android:layout_width="65dp" android:layout_height="wrap_content">
+                    <LinearLayout android:gravity="center" android:layout_gravity="center_horizontal" android:layout_width="35dp" android:layout_height="35dp">
+                        <ImageView android:background="@mipmap/ic_edit_meirong" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                    </LinearLayout>
+                    <TextView android:textColor="@color/color_white08" android:gravity="center" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15dp" android:text="@string/file_edit_like_beauty"/>
+                </LinearLayout>
+                <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:id="@+id/edit_tiaojie_button" android:layout_width="65dp" android:layout_height="wrap_content">
+                    <LinearLayout android:gravity="center" android:layout_gravity="center_horizontal" android:layout_width="35dp" android:layout_height="35dp">
+                        <ImageView android:background="@mipmap/ic_edit_tiaojie" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                    </LinearLayout>
+                    <TextView android:textColor="@color/color_white08" android:gravity="center" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15dp" android:text="@string/file_edit_adjust_the"/>
+                </LinearLayout>
+                <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:id="@+id/edit_masaike_button" android:layout_width="65dp" android:layout_height="wrap_content">
+                    <LinearLayout android:gravity="center" android:layout_gravity="center_horizontal" android:layout_width="35dp" android:layout_height="35dp">
+                        <ImageView android:background="@mipmap/ic_edit_masaike" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                    </LinearLayout>
+                    <TextView android:textColor="@color/color_white08" android:gravity="center" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15dp" android:text="@string/file_edit_mosaic"/>
+                </LinearLayout>
+                <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:id="@+id/edit_xuanzhuan_button" android:layout_width="65dp" android:layout_height="wrap_content">
+                    <LinearLayout android:gravity="center" android:layout_gravity="center_horizontal" android:layout_width="35dp" android:layout_height="35dp">
+                        <ImageView android:background="@mipmap/ic_edit_xuanzhuan" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                    </LinearLayout>
+                    <TextView android:textColor="@color/color_white08" android:gravity="center" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15dp" android:text="@string/file_edit_cropping_rotation"/>
+                </LinearLayout>
+                <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:id="@+id/edit_paint_button" android:layout_width="65dp" android:layout_height="wrap_content" android:layout_marginRight="25dp">
+                    <LinearLayout android:gravity="center" android:layout_gravity="center_horizontal" android:layout_width="35dp" android:layout_height="35dp">
+                        <ImageView android:background="@mipmap/ic_edit_huabi" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                    </LinearLayout>
+                    <TextView android:textColor="@color/color_white08" android:gravity="center" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15dp" android:text="@string/file_edit_paint"/>
+                </LinearLayout>
+            </LinearLayout>
+        </HorizontalScrollView>
+    </LinearLayout>
+</LinearLayout>

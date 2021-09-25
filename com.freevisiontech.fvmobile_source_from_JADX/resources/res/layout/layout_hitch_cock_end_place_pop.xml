@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@color/transparent" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <LinearLayout android:layout_gravity="center" android:orientation="horizontal" android:id="@+id/layout_camera_shortcut_pop_out_linear" android:background="@color/transparent" android:layout_width="290dp" android:layout_height="290dp">
+        <LinearLayout android:orientation="vertical" android:id="@+id/layout_camera_shortcut_pop_vertical_bottom_top" android:visibility="visible" android:layout_width="33dp" android:layout_height="290dp"/>
+        <LinearLayout android:orientation="vertical" android:id="@+id/layout_camera_shortcut_pop_int_linear" android:layout_width="225dp" android:layout_height="290dp">
+            <RelativeLayout android:background="@drawable/sp_hitch_cock_white_round5_bg" android:layout_width="match_parent" android:layout_height="match_parent">
+                <LinearLayout android:orientation="vertical" android:id="@+id/ll_top" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <RelativeLayout android:id="@+id/rl_top" android:layout_width="match_parent" android:layout_height="36dp">
+                        <ImageView android:id="@+id/btn_close" android:background="@color/transparent" android:paddingLeft="15dp" android:paddingRight="15dp" android:layout_width="wrap_content" android:layout_height="match_parent" android:src="@mipmap/fanhui" android:layout_centerVertical="true" android:layout_alignParentStart="true"/>
+                        <TextView android:textSize="@dimen/text_size15" android:textColor="@color/color_black4" android:id="@+id/btn_title_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/hitch_cock_end_place" android:layout_centerInParent="true"/>
+                    </RelativeLayout>
+                    <View android:id="@+id/line" android:background="@color/black_10" android:layout_width="match_parent" android:layout_height="1dp"/>
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="36dp">
+                    <TextView android:textSize="@dimen/text_size13" android:textColor="@color/color_black4" android:paddingLeft="15dp" android:paddingTop="15dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/hitch_cock_set_wt" android:layout_centerInParent="true"/>
+                    <RelativeLayout android:gravity="center" android:id="@+id/bg_hitch_cock_end_place_relative_wt" android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_centerVertical="true">
+                            <TextView android:layout_width="match_parent" android:layout_height="5dp"/>
+                            <LinearLayout android:orientation="vertical" android:id="@+id/ll_scale_hitch_cock_end_place_wt" android:background="@color/black_20" android:visibility="visible" android:layout_width="match_parent" android:layout_height="43dp" android:layout_centerVertical="true"/>
+                        </LinearLayout>
+                        <com.freevisiontech.fvmobile.widget.scale.hitch.HorizontalScaleScrollViewHitchCockWT android:gravity="center_vertical" android:id="@+id/horizontalScaleScrollViewHitchCockWT" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" app:lf_scale_view_height="8dp" app:lf_scale_view_margin="4dp"/>
+                    </RelativeLayout>
+                    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/text_size15" android:layout_marginTop="@dimen/text_size15">
+                        <TextView android:textSize="@dimen/text_size13" android:textColor="@color/color_black4" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/hitch_cock_set_mf"/>
+                        <TextView android:textSize="@dimen/text_size14" android:textColor="@color/white" android:gravity="center" android:layout_gravity="center_vertical" android:id="@+id/horizontal_scale_mf_textview" android:background="@drawable/sp_hitch_cock_gray_round9_bg" android:visibility="gone" android:layout_width="37dp" android:layout_height="18dp" android:layout_marginLeft="22dp" android:text="0.83"/>
+                        <RelativeLayout android:orientation="horizontal" android:id="@+id/rl_text_af_and_mf_black" android:background="@drawable/edit_button_black_round_bg10" android:visibility="visible" android:layout_width="72dp" android:layout_height="20dp" android:layout_marginLeft="@dimen/text_size15">
+                            <TextView android:textSize="@dimen/text_size12" android:textColor="@color/white" android:gravity="center" android:layout_gravity="center_vertical" android:id="@+id/horizontal_scale_mf_text_af" android:background="@drawable/edit_button_black_round_left_bg10" android:layout_width="35dp" android:layout_height="18dp" android:layout_marginLeft="1dp" android:text="AF" android:layout_alignParentLeft="true" android:layout_centerVertical="true"/>
+                            <TextView android:textSize="@dimen/text_size12" android:textColor="@color/color_black55" android:gravity="center" android:layout_gravity="center_vertical" android:id="@+id/horizontal_scale_mf_text_mf" android:background="@drawable/edit_button_white_round_right_bg10" android:layout_width="36dp" android:layout_height="18dp" android:layout_marginRight="1dp" android:text="MF" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+                        </RelativeLayout>
+                        <RelativeLayout android:orientation="horizontal" android:id="@+id/rl_text_af_and_mf_front" android:background="@drawable/edit_button_gray_round_bg10" android:visibility="gone" android:layout_width="72dp" android:layout_height="20dp" android:layout_marginLeft="@dimen/text_size15">
+                            <TextView android:textSize="@dimen/text_size12" android:textColor="@color/white_ec" android:gravity="center" android:layout_gravity="center_vertical" android:layout_width="35dp" android:layout_height="18dp" android:layout_marginLeft="1dp" android:text="AF" android:layout_alignParentLeft="true" android:layout_centerVertical="true"/>
+                            <View android:background="@color/white30" android:layout_width="1dp" android:layout_height="match_parent" android:layout_centerInParent="true"/>
+                            <TextView android:textSize="@dimen/text_size12" android:textColor="@color/white_ec" android:gravity="center" android:layout_gravity="center_vertical" android:layout_width="36dp" android:layout_height="18dp" android:layout_marginRight="1dp" android:text="MF" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+                        </RelativeLayout>
+                    </LinearLayout>
+                    <RelativeLayout android:id="@+id/bg_hitch_cock_setting_time_relative_mf" android:background="@color/black_20" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8dp">
+                        <com.freevisiontech.fvmobile.widget.scale.hitch.HorizontalScaleScrollViewHitchCockMf android:id="@+id/horizontalScaleMf" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" app:lf_scale_view_height="8dp" app:lf_scale_view_margin="4dp"/>
+                        <com.freevisiontech.fvmobile.widget.scale.hitch.HorizontalScaleScrollViewHitchCockMfToAf android:id="@+id/horizontalScaleMfToAf" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" app:lf_scale_view_height="8dp" app:lf_scale_view_margin="4dp"/>
+                        <LinearLayout android:orientation="vertical" android:id="@+id/horizontalScaleMf_linear" android:visibility="visible" android:layout_width="match_parent" android:layout_height="60dp"/>
+                    </RelativeLayout>
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:id="@+id/ll_bottom_layout" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+                    <View android:id="@+id/line2" android:background="@color/black_10" android:layout_width="match_parent" android:layout_height="1dp"/>
+                    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/ll_bottom" android:layout_width="match_parent" android:layout_height="57dp">
+                        <TextView android:textSize="@dimen/text_size15" android:textColor="@color/color_white" android:gravity="center" android:layout_gravity="center_vertical" android:id="@+id/btn_standard" android:background="@drawable/sp_black1_round_bg" android:layout_width="90dp" android:layout_height="43dp" android:text="@string/label_next_step"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@+id/layout_camera_shortcut_pop_vertical_bottom" android:layout_width="33dp" android:layout_height="290dp"/>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="245" android:versionName="2.4.5" android:compileSdkVersion="28" android:compileSdkVersionCodename="9" package="com.freevisiontech.fvmobile" platformBuildVersionCode="28" platformBuildVersionName="9">
+    <uses-sdk android:minSdkVersion="21" android:targetSdkVersion="28"/>
+    <meta-data android:name="CHANNEL_VALUE" android:value="google"/>
+    <uses-feature android:name="android.hardware.bluetooth_le" android:required="true"/>
+    <uses-permission android:name="android.permission.ACTION_MANAGE_OVERLAY_PERMISSION"/>
+    <uses-permission android:name="android.permission.GET_TASKS"/>
+    <uses-permission android:name="com.android.vending.CHECK_LICENSE"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.BLUETOOTH"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_MULTICAST_STATE"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.RECEIVE_USER_PRESENT"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES"/>
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS"/>
+    <uses-permission android:name="android.permission.WRITE_SETTINGS"/>
+    <uses-feature android:name="android.hardware.camera"/>
+    <uses-feature android:name="android.hardware.camera.autofocus"/>
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
+    <application android:theme="@style/NoTitleFullscreen" android:label="@string/app_name" android:icon="@mipmap/ic_app" android:name="com.freevisiontech.fvmobile.application.MyApplication" android:allowBackup="true" android:supportsRtl="true" android:networkSecurityConfig="@xml/network_security_config">
+        <activity android:name="com.freevisiontech.fvmobile.activity.FVSplashActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <service android:name="com.freevisiontech.fvmobile.utils.DownloadExpansionService"/>
+        <receiver android:name="com.freevisiontech.fvmobile.utils.DownloadExpansionAlarmReceiver"/>
+        <activity android:theme="@style/Theme.AppCompat.NoActionBar" android:name="com.freevisiontech.fvmobile.activity.FVDownloadExpansionActivity" android:launchMode="singleTask" android:configChanges="keyboardHidden|orientation|screenSize"/>
+        <activity android:theme="@style/Theme.AppCompat.NoActionBar" android:name="com.freevisiontech.fvmobile.activity.FVWebActivity" android:launchMode="singleTask" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize"/>
+        <activity android:name="com.freevisiontech.fvmobile.activity.FVHomeActivity" android:launchMode="singleTask" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize"/>
+        <activity android:name="com.freevisiontech.fvmobile.activity.FVMainActivity" android:launchMode="singleTask" android:screenOrientation="landscape" android:configChanges="keyboardHidden|orientation|screenSize"/>
+        <activity android:name="com.freevisiontech.fvmobile.activity.FVAdvancedSettingAvtivity" android:launchMode="singleTask" android:configChanges="keyboardHidden|orientation|screenSize"/>
+        <activity android:theme="@style/Theme.AppCompat.NoActionBar" android:name="com.freevisiontech.fvmobile.activity.LookPhotoActivity" android:launchMode="singleTask" android:configChanges="keyboardHidden|orientation|screenSize"/>
+        <activity android:theme="@style/Theme.AppCompat.NoActionBar" android:name="com.freevisiontech.fvmobile.activity.LookAllSceneryPhotoActivity" android:launchMode="singleTask" android:screenOrientation="landscape" android:configChanges="keyboardHidden|orientation|screenSize"/>
+        <activity android:theme="@style/Theme.AppCompat.NoActionBar" android:name="com.freevisiontech.fvmobile.activity.PlayVideoActivity" android:launchMode="singleTask" android:configChanges="keyboardHidden|orientation|screenSize"/>
+        <activity android:theme="@style/Theme.AppCompat.NoActionBar" android:name="com.freevisiontech.fvmobile.activity.VideoViewActivity" android:launchMode="singleTask" android:configChanges="keyboardHidden|orientation|screenSize"/>
+        <activity android:theme="@style/Theme.AppCompat.NoActionBar" android:name="com.freevisiontech.fvmobile.activity.ControllerActivity" android:launchMode="singleTask" android:configChanges="keyboardHidden|orientation|screenSize"/>
+        <activity android:theme="@style/Theme.AppCompat.NoActionBar" android:name="p010me.iwf.photopicker.PhotoPickerActivity"/>
+        <activity android:theme="@style/Theme.AppCompat.NoActionBar" android:name="p010me.iwf.photopicker.PhotoPagerActivity"/>
+        <activity android:name="com.freevisiontech.fvmobile.activity.FileWriteActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize"/>
+        <activity android:name="com.freevisiontech.fvmobile.activity.VideoEditingEndActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.freevisiontech.fvmobile.activity.FVCameraFileActivity" android:configChanges="keyboardHidden|orientation|screenSize"/>
+        <activity android:name="com.freevisiontech.fvmobile.activity.FVCameraFileTwoActivity" android:configChanges="keyboardHidden|orientation|screenSize"/>
+        <activity android:theme="@style/Theme.Translucent.NoTitleBar.Fullscreen" android:name="com.freevisiontech.fvmobile.activity.FVAppUpgradeActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.freevisiontech.fvmobile.activity.FVAboutAppActivity" android:configChanges="keyboardHidden|orientation|screenSize"/>
+        <activity android:name="com.freevisiontech.fvmobile.activity.FVPtzBatteryInfoActivity" android:configChanges="keyboardHidden|orientation|screenSize"/>
+        <activity android:name="com.freevisiontech.fvmobile.activity.FVAboutPtzActivity" android:configChanges="keyboardHidden|orientation|screenSize"/>
+        <activity android:theme="@style/Theme.NoTitleBar.Fullscreen" android:name="com.freevisiontech.fvmobile.activity.PhotoEditActivity" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/Theme.NoTitleBar.Fullscreen" android:name="com.freevisiontech.fvmobile.activity.PhotoEditOneActivity" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/Theme.NoTitleBar.Fullscreen" android:name="com.freevisiontech.fvmobile.activity.PhotoEditTwoActivity" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/Theme.NoTitleBar.Fullscreen" android:name="com.freevisiontech.fvmobile.activity.PhotoEditThreeActivity" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/Theme.NoTitleBar.Fullscreen" android:name="com.freevisiontech.fvmobile.activity.PhotoEditFourActivity" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/Theme.NoTitleBar.Fullscreen" android:name="com.freevisiontech.fvmobile.activity.PhotoEditFiveActivity" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/Theme.NoTitleBar.Fullscreen" android:name="com.freevisiontech.fvmobile.activity.PhotoEditSixActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.freevisiontech.fvmobile.activity.VideoEditingActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.freevisiontech.fvmobile.activity.VideoEditingItemEachActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.freevisiontech.fvmobile.activity.SelectVideoEditingActivity" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/Theme.AppCompat.Light.NoActionBar" android:name="com.yalantis.ucrop.UCropActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.freevisiontech.fvmobile.activity.FVCalibrationActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.freevisiontech.fvmobile.activity.FVCalibrationActivity2" android:screenOrientation="portrait"/>
+        <activity android:name="com.freevisiontech.fvmobile.activity.FVCalibrationActivity3" android:screenOrientation="portrait"/>
+        <activity android:name="com.freevisiontech.fvmobile.activity.FVCalibrationActivity4" android:screenOrientation="portrait"/>
+        <activity android:name="com.freevisiontech.fvmobile.activity.FVKcfFreestyleActivity" android:launchMode="singleTask" android:screenOrientation="landscape" android:configChanges="keyboardHidden|orientation|screenSize"/>
+        <activity android:name="com.freevisiontech.fvmobile.activity.FVHelpActivity"/>
+        <activity android:name="com.freevisiontech.fvmobile.activity.FVTeachingVideoActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize"/>
+        <activity android:name="com.freevisiontech.fvmobile.activity.FVTeachingVideoSActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize"/>
+        <activity android:name="com.freevisiontech.fvmobile.activity.FVADActivity" android:configChanges="keyboardHidden|orientation|screenSize"/>
+        <meta-data android:name="android.max_aspect" android:value="2.1"/>
+        <meta-data android:name="UMENG_APPKEY" android:value="5a5c53d9b27b0a68240000d2"/>
+        <provider android:name="android.support.p001v4.content.FileProvider" android:exported="false" android:authorities="com.freevisiontech.fvmobile.fileProvider" android:grantUriPermissions="true">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/file_paths"/>
+        </provider>
+        <uses-library android:name="org.apache.http.legacy" android:required="false"/>
+        <provider android:name="p010me.iwf.photopicker.utils.PhotoFileProvider" android:exported="false" android:authorities="com.freevisiontech.fvmobile.provider" android:grantUriPermissions="true">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/__picker_provider_paths"/>
+        </provider>
+        <meta-data android:name="android.support.VERSION" android:value="26.1.0"/>
+        <meta-data android:name="android.arch.lifecycle.VERSION" android:value="27.0.0-SNAPSHOT"/>
+        <activity android:name="com.p007ny.ijk.upplayer.p015ui.PlayActivity" android:configChanges="keyboardHidden|orientation|screenSize"/>
+        <meta-data android:name="com.android.vending.derived.apk.id" android:value="1"/>
+    </application>
+</manifest>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="100dp" android:layout_height="100dp">
+    <ImageView android:id="@+id/iv_recycle_item_image" android:background="@drawable/file_selected_selector" android:padding="2dp" android:layout_width="100dp" android:layout_height="100dp" android:layout_marginTop="1.5dp" android:scaleType="fitXY"/>
+    <TextView android:textSize="9dp" android:textColor="@color/color_black1" android:gravity="center" android:id="@+id/iv_recycle_item_image_yuanpian" android:background="@mipmap/ic_file_item_image_yuanpian" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="4dp" android:text="@string/file_the_raw" android:layout_alignParentRight="true" android:layout_alignParentBottom="true"/>
+    <TextView android:textSize="9dp" android:textColor="@color/color_black1" android:gravity="center" android:id="@+id/iv_recycle_item_image_bianji" android:background="@mipmap/ic_file_item_image_bianji" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="4dp" android:text="@string/file_creation" android:layout_alignParentRight="true" android:layout_alignParentBottom="true"/>
+    <LinearLayout android:id="@+id/iv_file_item_pho_ll" android:visibility="gone" android:layout_width="100dp" android:layout_height="100dp">
+        <ImageView android:id="@+id/iv_file_item_pho_gou" android:background="@drawable/ic_file_photo_gou" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="2dp" android:layout_marginLeft="15dp" android:layout_marginTop="75dp"/>
+    </LinearLayout>
+    <LinearLayout android:id="@+id/ll_duration" android:background="@color/gray_line" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_alignParentBottom="true" android:alpha="0.8">
+        <TextView android:textSize="9dp" android:id="@+id/duration" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="00:00:00"/>
+    </LinearLayout>
+</RelativeLayout>

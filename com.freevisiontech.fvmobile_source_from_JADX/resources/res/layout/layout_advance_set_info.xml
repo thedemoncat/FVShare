@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="25dp" android:layout_marginRight="25dp">
+    <ScrollView android:id="@+id/scrollview" android:visibility="visible" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <RelativeLayout android:id="@+id/rl_battery_info" android:background="@drawable/main_topbar_pop" android:layout_width="match_parent" android:layout_height="50dp" android:layout_marginTop="19dp">
+                <TextView android:textSize="@dimen/text_size16" android:textColor="@color/color_black4" android:id="@+id/tv_ptz_battery_info" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:text="@string/ptz_battery_info" android:layout_centerVertical="true"/>
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="20dp" android:src="@mipmap/ic_right" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+            </RelativeLayout>
+            <RelativeLayout android:id="@+id/rl_about_ptz" android:background="@drawable/main_topbar_pop" android:layout_width="match_parent" android:layout_height="50dp" android:layout_marginTop="19dp">
+                <TextView android:textSize="@dimen/text_size16" android:textColor="@color/color_black4" android:id="@+id/tv_about_ptz" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:text="@string/about_ptz" android:layout_centerVertical="true"/>
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="20dp" android:src="@mipmap/ic_right" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+            </RelativeLayout>
+            <RelativeLayout android:id="@+id/rl_help" android:background="@drawable/main_topbar_pop" android:visibility="visible" android:layout_width="match_parent" android:layout_height="50dp" android:layout_marginTop="19dp">
+                <TextView android:textSize="@dimen/text_size16" android:textColor="@color/color_black4" android:id="@+id/tv_help" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:text="@string/help" android:layout_centerVertical="true"/>
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="20dp" android:src="@mipmap/ic_right" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+            </RelativeLayout>
+            <RelativeLayout android:id="@+id/rl_teach_video" android:background="@drawable/main_topbar_pop" android:visibility="visible" android:layout_width="match_parent" android:layout_height="50dp" android:layout_marginTop="19dp">
+                <TextView android:textSize="@dimen/text_size16" android:textColor="@color/color_black4" android:id="@+id/tv_teach_video" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:text="@string/teaching_video" android:layout_centerVertical="true"/>
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="20dp" android:src="@mipmap/ic_right" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+            </RelativeLayout>
+            <RelativeLayout android:id="@+id/rl_about_app" android:background="@drawable/main_topbar_pop" android:layout_width="match_parent" android:layout_height="50dp" android:layout_marginTop="19dp">
+                <TextView android:textSize="@dimen/text_size16" android:textColor="@color/color_black4" android:id="@+id/tv_about_app" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:text="@string/about_app" android:layout_centerVertical="true"/>
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="20dp" android:src="@mipmap/ic_right" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+            </RelativeLayout>
+            <RelativeLayout android:id="@+id/rl_live" android:background="@drawable/main_topbar_pop" android:visibility="gone" android:layout_width="match_parent" android:layout_height="50dp" android:layout_marginTop="19dp" android:layout_marginBottom="19dp">
+                <TextView android:textSize="@dimen/text_size16" android:textColor="@color/color_black4" android:id="@+id/tv_live_play" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:text="@string/live_play" android:layout_centerVertical="true"/>
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="20dp" android:src="@mipmap/ic_right" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center" android:orientation="vertical" android:background="@color/transparent" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:background="@color/transparent" android:layout_width="325dp" android:layout_height="225dp">
+        <LinearLayout android:orientation="vertical" android:background="@drawable/edit_button_buttom_paint_round_bg10" android:visibility="visible" android:layout_width="325dp" android:layout_height="225dp">
+            <TextView android:textSize="16dp" android:textStyle="bold" android:textColor="@color/color_black55" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="22dp" android:layout_marginBottom="22dp" android:text="@string/file_look_photo_info"/>
+            <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="30dp">
+                <TextView android:textSize="@dimen/text_size14" android:textColor="@color/color_light_gray2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="25dp" android:text="@string/file_look_photo_info_date"/>
+                <TextView android:textSize="@dimen/text_size14" android:textColor="@color/color_black55" android:id="@+id/dialog_fvlook_photo_msg_date" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12dp" android:text=""/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="30dp">
+                <TextView android:textSize="@dimen/text_size14" android:textColor="@color/color_light_gray2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="25dp" android:text="@string/file_look_photo_info_size"/>
+                <TextView android:textSize="@dimen/text_size14" android:textColor="@color/color_black55" android:id="@+id/dialog_fvlook_photo_msg_size" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12dp" android:text=""/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <TextView android:textSize="@dimen/text_size14" android:textColor="@color/color_light_gray2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="25dp" android:text="@string/file_look_photo_info_path"/>
+                <TextView android:textSize="@dimen/text_size14" android:textColor="@color/color_black55" android:id="@+id/dialog_fvlook_photo_msg_path" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12dp" android:text=""/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

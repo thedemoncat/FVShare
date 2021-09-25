@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginLeft="15dp">
+            <View android:id="@+id/recycler_item_zhaopian_view_top" android:background="@color/gray_line" android:layout_width="1dp" android:layout_height="23dp"/>
+            <ImageView android:background="@color/color_black" android:layout_width="7dp" android:layout_height="7dp"/>
+            <View android:background="@color/gray_line" android:layout_width="1dp" android:layout_height="match_parent"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@+id/recycle_item_zhaopian_recycle" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="15dp" android:layout_marginTop="16dp" android:layout_marginBottom="8dp">
+            <TextView android:id="@+id/recycler_item_zhaopian_date" android:layout_width="wrap_content" android:layout_height="18dp" android:layout_marginBottom="@dimen/text_size10" android:text="2017/08/09"/>
+            <android.support.p003v7.widget.RecyclerView android:id="@+id/zhaopian_item_recycle_grid" android:scrollbars="vertical" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

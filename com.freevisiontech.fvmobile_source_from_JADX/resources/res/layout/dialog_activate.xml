@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:id="@+id/activate_dialog_content_ll" android:background="@drawable/free_dialog_bg" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="4dp" android:layout_centerInParent="true">
+        <TextView android:textSize="18sp" android:textStyle="bold" android:textColor="@color/color_black55" android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="30dp" android:text="@string/activate_tip"/>
+        <TextView android:textSize="14sp" android:textColor="@color/color_black55" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:layout_marginTop="25dp" android:layout_marginRight="20dp" android:text="@string/activate_tip_1"/>
+        <TextView android:textSize="14sp" android:textColor="@color/color_black55" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:layout_marginTop="16dp" android:layout_marginRight="20dp" android:text="@string/activate_tip_2"/>
+        <RelativeLayout android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="46dp">
+            <Button android:textSize="16sp" android:textStyle="bold" android:textColor="@color/white" android:id="@+id/activate_btn" android:background="@drawable/activate_button_bg" android:layout_width="170dp" android:layout_height="40dp" android:text="@string/activate_start"/>
+        </RelativeLayout>
+        <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="50dp" android:layout_marginBottom="34dp">
+            <TextView android:textSize="@dimen/text_size11" android:textColor="#4ba0ff" android:id="@+id/activate_user_privacy_agreement" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4dp" android:text="@string/activate_user_privacy_agreement"/>
+        </LinearLayout>
+    </LinearLayout>
+    <RelativeLayout android:gravity="right" android:id="@+id/cancel_rl" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignTop="@+id/activate_dialog_content_ll">
+        <ImageButton android:id="@+id/dismiss_activate_dialog_iv" android:background="@mipmap/ic_activate_cancel" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    </RelativeLayout>
+</RelativeLayout>

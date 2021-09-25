@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include android:id="@+id/top_title" layout="@layout/layout_file_title"/>
+    <include layout="@layout/layout_file_title_photo_video"/>
+    <FrameLayout android:id="@+id/fragment_file" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1"/>
+    <RelativeLayout android:gravity="center_vertical" android:id="@+id/main_share_delete" android:background="@color/color_white" android:visibility="visible" android:layout_width="match_parent" android:layout_height="49dp" android:layout_alignParentBottom="true">
+        <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true">
+            <ImageView android:id="@+id/text_main_share" android:background="@drawable/file_share_button_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="25dp"/>
+            <ImageView android:id="@+id/text_main_baocun" android:background="@drawable/file_baocun_button_selector" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="30dp"/>
+        </LinearLayout>
+        <ImageButton android:id="@+id/act_text_main_delete" android:background="@color/transparent" android:padding="@dimen/text_size14" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="30dp" android:src="@drawable/file_delete_button_selector" android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+</LinearLayout>

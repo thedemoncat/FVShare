@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:paddingLeft="15dp" android:paddingRight="15dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RelativeLayout android:layout_gravity="center" android:id="@+id/rl_add" android:background="@drawable/sp_white_ebebeb_round5_bg" android:visibility="visible" android:layout_width="142dp" android:layout_height="80dp" android:layout_marginTop="11dp">
+        <ImageView android:gravity="center" android:layout_gravity="center" android:id="@+id/btn_add" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/ic_add_view" android:scaleType="centerInside" android:layout_centerInParent="true"/>
+    </RelativeLayout>
+    <RelativeLayout android:gravity="center" android:layout_gravity="center" android:id="@+id/rl_icon" android:visibility="gone" android:layout_width="146dp" android:layout_height="84dp" android:layout_marginTop="11dp">
+        <com.makeramen.roundedimageview.RoundedImageView android:gravity="center" android:id="@+id/btn_icon" android:layout_width="142dp" android:layout_height="80dp" android:layout_marginLeft="1.2dp" android:scaleType="centerCrop" app:riv_corner_radius_top_left="5dp" app:riv_corner_radius_top_right="5dp" app:riv_corner_radius_bottom_left="5dp" app:riv_corner_radius_bottom_right="5dp"/>
+        <ImageView android:id="@+id/btn_delete" android:padding="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/ic_delect_icon" android:layout_alignParentTop="true" android:layout_alignParentEnd="true"/>
+    </RelativeLayout>
+    <TextView android:textSize="@dimen/text_size15" android:textColor="@color/color_black4" android:gravity="center" android:layout_gravity="center" android:id="@+id/tv_desc" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="11dp" android:layout_marginBottom="11dp" android:text="@string/label_move_ptz_select_viewing_position"/>
+</LinearLayout>

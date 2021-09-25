@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="101dp">
+    <RelativeLayout android:id="@+id/layout_camera_second_item_relative" android:layout_width="match_parent" android:layout_height="101dp">
+        <TextView android:textSize="@dimen/text_size12" android:textColor="@color/color_black4" android:gravity="center" android:id="@+id/text" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="100dp" android:layout_marginLeft="14dp" android:text="@string/label_camera"/>
+        <com.makeramen.roundedimageview.RoundedImageView android:gravity="center" android:id="@+id/image" android:visibility="gone" android:layout_width="100dp" android:layout_height="75dp" android:src="@mipmap/ic_home_back" android:scaleType="centerInside" android:layout_centerInParent="true" app:riv_corner_radius_top_left="6dp" app:riv_corner_radius_top_right="6dp" app:riv_corner_radius_bottom_left="6dp" app:riv_corner_radius_bottom_right="6dp"/>
+        <ImageView android:id="@+id/btn_select" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="100dp" android:layout_marginRight="15dp" android:src="@mipmap/ic_select" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+    </RelativeLayout>
+</RelativeLayout>

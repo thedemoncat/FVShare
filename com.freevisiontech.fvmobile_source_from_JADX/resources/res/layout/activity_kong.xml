@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <TextView android:id="@+id/device_address" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="蓝牙地址"/>
+    <TextView android:id="@+id/device_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="蓝牙名称"/>
+    <TextView android:id="@+id/connect_state" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="连接状态"/>
+    <Button android:id="@+id/get_single_parameters" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="15dp" android:text="获取单项参数"/>
+    <Button android:id="@+id/set_single_parameters" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="15dp" android:text="设置单项参数"/>
+    <Button android:id="@+id/follow_schema" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="15dp" android:text="跟随模式"/>
+    <TextView android:gravity="center" android:layout_gravity="center" android:id="@+id/gmu_upgrade_frimware" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="15dp" android:text="GMU不可升级"/>
+    <TextView android:gravity="center" android:id="@+id/imu_upgrade_frimware" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="15dp" android:text="IMU不可升级"/>
+    <TextView android:gravity="center" android:layout_gravity="center" android:id="@+id/show_receive_data" android:layout_width="match_parent" android:layout_height="50dp" android:layout_marginTop="50dp"/>
+</LinearLayout>

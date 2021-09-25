@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_gravity="bottom" android:orientation="vertical" android:id="@+id/act_layout_file_buttom" android:layout_width="match_parent" android:layout_height="49dp">
+    <RelativeLayout android:gravity="center_vertical" android:id="@+id/main_share_delete" android:background="@color/white" android:visibility="visible" android:layout_width="match_parent" android:layout_height="49dp" android:layout_alignParentBottom="true">
+        <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true">
+            <ImageButton android:id="@+id/text_main_share" android:background="@color/transparent" android:padding="@dimen/text_size14" android:layout_width="49dp" android:layout_height="49dp" android:layout_marginLeft="15dp" android:src="@drawable/file_share_button_selector"/>
+            <ImageButton android:id="@+id/text_main_baocun" android:background="@color/transparent" android:visibility="gone" android:layout_width="49dp" android:layout_height="49dp" android:layout_marginLeft="15dp" android:src="@drawable/file_baocun_button_selector"/>
+        </LinearLayout>
+        <ImageButton android:id="@+id/text_main_chuangzuo" android:background="@color/transparent" android:padding="@dimen/text_size14" android:layout_width="49dp" android:layout_height="49dp" android:src="@mipmap/ic_chuangzuo" android:layout_centerInParent="true"/>
+        <ImageButton android:id="@+id/text_main_delete" android:background="@color/transparent" android:padding="@dimen/text_size14" android:layout_width="49dp" android:layout_height="49dp" android:layout_marginRight="15dp" android:src="@drawable/file_delete_button_selector" android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+</LinearLayout>

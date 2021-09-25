@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+        <include android:id="@+id/top_title" layout="@layout/layout_file_title"/>
+        <android.support.p003v7.widget.RecyclerView android:id="@+id/fragment_recycler_shiping" android:scrollbars="vertical" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginBottom="44dp"/>
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:id="@+id/fragment_file_shiping_create" android:layout_width="match_parent" android:layout_height="44dp" android:layout_alignParentBottom="true">
+        <TextView android:id="@+id/tv_confirm" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/label_sure" android:alpha="0.2"/>
+    </LinearLayout>
+</RelativeLayout>

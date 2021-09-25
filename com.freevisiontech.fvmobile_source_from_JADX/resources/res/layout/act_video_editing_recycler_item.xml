@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginLeft="@dimen/text_size15" android:layout_marginRight="@dimen/text_size15">
+            <LinearLayout android:layout_gravity="center_horizontal" android:orientation="vertical" android:id="@+id/act_video_editing_recycler_item_left_top_gone" android:visibility="gone" android:layout_width="22dp" android:layout_height="64dp"/>
+            <LinearLayout android:layout_gravity="center_horizontal" android:orientation="vertical" android:id="@+id/act_video_editing_recycler_item_left_top" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <View android:layout_gravity="center_horizontal" android:background="@color/c55" android:layout_width="1dp" android:layout_height="15dp"/>
+                <ImageView android:layout_gravity="center_horizontal" android:background="@mipmap/ic_video_editing_xiaoguo" android:layout_width="22dp" android:layout_height="22dp"/>
+                <View android:layout_gravity="center_horizontal" android:background="@color/c55" android:layout_width="1dp" android:layout_height="27dp"/>
+            </LinearLayout>
+            <ImageView android:layout_gravity="center_horizontal" android:background="@drawable/edit_button_paint_round_bg2" android:layout_width="7dp" android:layout_height="7dp"/>
+            <View android:layout_gravity="center_horizontal" android:background="@color/c55" android:layout_width="1dp" android:layout_height="0dp" android:layout_weight="1"/>
+        </LinearLayout>
+        <RelativeLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/text_size15" android:textColor="@color/color_black55" android:id="@+id/act_video_editing_recycler_item_xuan_video" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15dp" android:text="@string/video_editing_the_selected_video"/>
+            <LinearLayout android:orientation="vertical" android:background="@drawable/edit_button_paint_round_bg5" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="45dp" android:layout_marginRight="15dp">
+                <RelativeLayout android:background="@drawable/edit_button_paint_round_bg5" android:layout_width="match_parent" android:layout_height="50dp">
+                    <ImageView android:id="@+id/act_video_editing_recycler_item_image" android:layout_width="match_parent" android:layout_height="50dp" android:layout_marginLeft="5dp" android:layout_marginRight="5dp" android:scaleType="fitXY" android:layout_centerHorizontal="true"/>
+                    <com.freevisiontech.fvmobile.widget.RangeSeekBar android:id="@+id/rsb_4" android:layout_width="match_parent" android:layout_height="50dp" android:layout_marginLeft="-15dp" android:layout_marginRight="-15dp" app:lineColorSelected="#70e3e7eb" app:lineColorEdge="#00ffffff" app:seekBarResId="@mipmap/ic_video_editing_huakuai_left"/>
+                </RelativeLayout>
+                <RelativeLayout android:id="@+id/act_video_editing_recycler_item_buttom" android:visibility="gone" android:layout_width="match_parent" android:layout_height="50dp">
+                    <ImageView android:id="@+id/act_video_editing_recycler_item_buttom_tiaojie" android:background="@mipmap/ic_video_editing_item_tiaojie" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="25dp" android:layout_centerVertical="true"/>
+                    <ImageView android:id="@+id/act_video_editing_recycler_item_buttom_delete" android:background="@mipmap/ic_video_editing_item_delete" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="25dp" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+                </RelativeLayout>
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

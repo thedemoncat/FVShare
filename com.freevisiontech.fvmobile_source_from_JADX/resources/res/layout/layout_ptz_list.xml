@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:clipChildren="false" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include android:id="@+id/top_title" layout="@layout/layout_title"/>
+    <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:id="@+id/indicator_layout" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="22dp" android:layout_alignParentBottom="true">
+        <ImageView android:layout_gravity="center_horizontal" android:id="@+id/indicator_0" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5dp" android:src="@mipmap/indicator_selected" android:scaleType="fitCenter"/>
+        <ImageView android:id="@+id/indicator_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5dp" android:src="@mipmap/indicator_unselected" android:scaleType="fitCenter"/>
+        <ImageView android:id="@+id/indicator_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/indicator_unselected" android:scaleType="fitCenter"/>
+    </LinearLayout>
+    <android.support.p001v4.view.ViewPager android:layout_gravity="center" android:id="@+id/vp_ptz_device_selector" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="25dp" android:layout_marginRight="25dp" android:layout_marginBottom="18dp" android:layout_above="@+id/indicator_layout" android:layout_below="@+id/top_title"/>
+</RelativeLayout>

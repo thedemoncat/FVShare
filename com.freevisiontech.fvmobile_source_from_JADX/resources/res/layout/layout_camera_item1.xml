@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="46dp">
+    <RelativeLayout android:id="@+id/layout_camera_item1_relative" android:layout_width="match_parent" android:layout_height="46dp">
+        <TextView android:textSize="@dimen/text_size15" android:textColor="@color/color_black4" android:gravity="center" android:id="@+id/text" android:layout_width="wrap_content" android:layout_height="44dp" android:layout_marginLeft="15dp" android:text="@string/label_beauty"/>
+        <SeekBar android:id="@+id/seekbar" android:layout_width="120dp" android:layout_height="wrap_content" android:layout_marginRight="15dp" android:maxHeight="2dp" android:max="10" android:progressDrawable="@drawable/seekbar_style_black4" android:minHeight="2dp" android:thumb="@mipmap/ic_seekbar_thumb" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+        <View android:id="@+id/line" android:background="@color/color_black3" android:layout_width="match_parent" android:layout_height="1dp" android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+</RelativeLayout>

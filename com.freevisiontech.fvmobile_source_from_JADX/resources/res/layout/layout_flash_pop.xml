@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="horizontal" android:background="@mipmap/ic_flash_bg_shadow" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <ImageView android:layout_gravity="center" android:id="@+id/btn_flash_long" android:layout_width="43dp" android:layout_height="44dp" android:src="@mipmap/ic_flash_long_open" android:scaleType="centerInside"/>
+    <ImageView android:layout_gravity="center" android:id="@+id/btn_flash_close" android:layout_width="43dp" android:layout_height="44dp" android:src="@mipmap/ic_flash_close" android:scaleType="centerInside"/>
+    <ImageView android:layout_gravity="center" android:id="@+id/btn_flash_auto" android:layout_width="43dp" android:layout_height="44dp" android:src="@mipmap/ic_flash_auto" android:scaleType="centerInside"/>
+    <ImageView android:layout_gravity="center" android:id="@+id/btn_flash_open" android:layout_width="43dp" android:layout_height="44dp" android:layout_marginRight="5dp" android:src="@mipmap/ic_flash_open" android:scaleType="centerInside"/>
+</LinearLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center" android:orientation="vertical" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:id="@+id/dialog_fvkcf_free_linear" android:background="@color/white" android:layout_width="315dp" android:layout_height="100dp">
+        <TextView android:textSize="@dimen/text_size16" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="26dp" android:layout_marginTop="17dp" android:text="@string/file_photo_video_delete_yes_or_no_one"/>
+        <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="26dp" android:layout_marginBottom="5dp" android:layout_alignParentRight="true" android:layout_alignParentBottom="true">
+            <TextView android:textSize="@dimen/text_size14" android:textColor="@color/dialog_text_lan" android:gravity="center" android:id="@+id/dialog_fvkcf_free_reset" android:layout_width="wrap_content" android:layout_height="45dp" android:text="@string/label_cancel"/>
+            <TextView android:textSize="@dimen/text_size14" android:textColor="@color/dialog_text_lan" android:gravity="center" android:id="@+id/dialog_fvkcf_free_sure" android:layout_width="wrap_content" android:layout_height="45dp" android:layout_marginLeft="30dp" android:text="@string/label_sure"/>
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

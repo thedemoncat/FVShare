@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="@color/transparent" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:orientation="vertical" android:id="@+id/rl_upgrade_pre" android:background="@drawable/free_dialog_bg" android:visibility="visible" android:layout_width="325dp" android:layout_height="275dp" android:layout_centerInParent="true">
+        <ImageView android:layout_gravity="center" android:id="@+id/iv_pictrue" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15dp" android:src="@mipmap/to_left" android:layout_centerHorizontal="true"/>
+        <TextView android:textSize="14dp" android:textColor="@color/color_black4" android:gravity="center" android:id="@+id/tv_desc" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:layout_marginTop="15dp" android:layout_marginRight="15dp" android:text="@string/direction_of_adjustment" android:layout_below="@+id/iv_pictrue"/>
+        <View android:id="@+id/line1" android:background="@color/color_black3" android:layout_width="match_parent" android:layout_height="2px" android:layout_above="@+id/ll_upgrade_btn_pre"/>
+        <LinearLayout android:orientation="horizontal" android:id="@+id/ll_upgrade_btn_pre" android:layout_width="match_parent" android:layout_height="45dp" android:layout_alignParentBottom="true">
+            <Button android:textSize="16dp" android:textStyle="bold" android:textColor="@color/color_black4" android:gravity="center" android:id="@+id/yes" android:background="@null" android:visibility="visible" android:layout_width="0dp" android:layout_height="match_parent" android:text="@string/label_sure" android:singleLine="true" android:layout_weight="1" android:textAllCaps="false"/>
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="65dp" android:layout_height="36dp">
+    <ImageView android:id="@+id/act_edit_buttom_paint_xiangpi" android:background="@mipmap/ic_edit_photo_xiangpi" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4dp" android:layout_centerInParent="true"/>
+    <RelativeLayout android:id="@+id/recycle_item_photo_paint_color_all" android:layout_width="65dp" android:layout_height="36dp">
+        <ImageView android:id="@+id/recycle_item_photo_paint_color14" android:background="@drawable/edit_photo_paint_round_bg_f2" android:layout_width="14dp" android:layout_height="14dp" android:layout_marginBottom="4dp" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true"/>
+        <ImageView android:id="@+id/recycle_item_photo_paint_color20" android:background="@drawable/edit_photo_paint_round_bg_f2" android:visibility="visible" android:layout_width="20dp" android:layout_height="20dp" android:layout_marginBottom="2dp" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true"/>
+        <ImageView android:id="@+id/recycle_item_photo_paint_xiangxia" android:background="@mipmap/ic_photo_paint_xiangxia" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true"/>
+    </RelativeLayout>
+</RelativeLayout>

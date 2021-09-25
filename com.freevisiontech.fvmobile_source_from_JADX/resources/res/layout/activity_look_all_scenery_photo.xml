@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="@color/color_black19" android:layout_width="match_parent" android:layout_height="match_parent">
+    <fragment android:name="p010me.iwf.photopicker.fragment.ImagePagerFragment" android:id="@+id/photoPagerFragment" android:background="@color/color_black19" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <ImageView android:layout_gravity="top|right|center_vertical|center_horizontal|center" android:id="@+id/act_look_all_scenery_photo_close" android:background="@mipmap/ic_all_scenery_close" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="30dp" android:layout_marginRight="30dp"/>
+</FrameLayout>

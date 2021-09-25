@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <VideoView android:layout_gravity="center_horizontal" android:id="@+id/vv_videoview" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1"/>
+        <SeekBar android:id="@+id/seekBar" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/text_size10" android:max="100" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" style="@style/Widget.SeekBar.Normal"/>
+        <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <Button android:id="@+id/btn_play" android:layout_width="0dp" android:layout_height="wrap_content" android:text="播放" android:layout_weight="1"/>
+            <Button android:id="@+id/btn_pause" android:layout_width="0dp" android:layout_height="wrap_content" android:text="暂停" android:layout_weight="1"/>
+            <Button android:id="@+id/btn_replay" android:layout_width="0dp" android:layout_height="wrap_content" android:text="重播" android:layout_weight="1"/>
+            <Button android:id="@+id/btn_stop" android:layout_width="0dp" android:layout_height="wrap_content" android:text="停止" android:layout_weight="1"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

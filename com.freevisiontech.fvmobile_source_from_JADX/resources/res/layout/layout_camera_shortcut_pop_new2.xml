@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:orientation="vertical" android:background="@color/transparent" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:id="@+id/layout_camera_shortcut_pop_out_linear" android:layout_width="330dp" android:layout_height="330dp" android:layout_marginTop="@dimen/text_size10">
+        <LinearLayout android:orientation="vertical" android:id="@+id/layout_camera_shortcut_pop_vertical_bottom_top" android:visibility="gone" android:layout_width="330dp" android:layout_height="110dp"/>
+        <LinearLayout android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:orientation="vertical" android:id="@+id/layout_camera_shortcut_pop_int_linear" android:background="@drawable/sp_white_round5_bg" android:layout_width="330dp" android:layout_height="220dp">
+            <RelativeLayout android:layout_width="match_parent" android:layout_height="45dp">
+                <ImageView android:id="@+id/btn_back" android:paddingLeft="15dp" android:paddingRight="15dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="match_parent" android:src="@mipmap/ic_back" android:scaleType="centerInside" android:layout_centerVertical="true"/>
+                <TextView android:textSize="@dimen/text_size15" android:textColor="@color/color_light_gray" android:gravity="center" android:id="@+id/title" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="@string/label_camera" android:layout_centerHorizontal="true"/>
+            </RelativeLayout>
+            <View android:id="@+id/line" android:background="@color/color_black3" android:layout_width="match_parent" android:layout_height="1dp" android:layout_alignParentBottom="true"/>
+            <ListView android:id="@+id/listView" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginBottom="5dp" android:divider="@color/color_black3" android:dividerHeight="@null"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@+id/layout_camera_shortcut_pop_vertical_bottom" android:layout_width="330dp" android:layout_height="110dp"/>
+    </LinearLayout>
+</LinearLayout>

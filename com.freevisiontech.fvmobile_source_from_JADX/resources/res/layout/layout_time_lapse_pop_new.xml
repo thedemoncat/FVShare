@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@color/transparent" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <LinearLayout android:layout_gravity="center" android:orientation="horizontal" android:id="@+id/layout_camera_shortcut_pop_out_linear" android:background="@color/transparent" android:layout_width="330dp" android:layout_height="330dp" android:layout_marginTop="@dimen/text_size5">
+        <LinearLayout android:orientation="vertical" android:id="@+id/layout_camera_shortcut_pop_vertical_bottom_top" android:visibility="visible" android:layout_width="55dp" android:layout_height="330dp"/>
+        <LinearLayout android:orientation="vertical" android:id="@+id/layout_camera_shortcut_pop_int_linear" android:background="@drawable/sp_white_round5_bg" android:layout_width="220dp" android:layout_height="330dp">
+            <RelativeLayout android:layout_width="match_parent" android:layout_height="36dp">
+                <ImageView android:id="@+id/btn_close" android:background="@color/transparent" android:paddingLeft="15dp" android:paddingRight="15dp" android:layout_width="wrap_content" android:layout_height="match_parent" android:src="@mipmap/fanhui" android:layout_centerVertical="true" android:layout_alignParentStart="true"/>
+                <TextView android:textSize="@dimen/text_size15" android:textColor="@color/color_light_gray" android:id="@+id/layout_time_lapse_pop_new_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/label_move_delay_video" android:layout_centerInParent="true"/>
+            </RelativeLayout>
+            <LinearLayout android:orientation="vertical" android:id="@+id/layout_lapse_time_visible_or_gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <View android:background="@color/color_light_gray" android:layout_width="match_parent" android:layout_height="1dp"/>
+                <RelativeLayout android:layout_width="match_parent" android:layout_height="75dp">
+                    <TextView android:textSize="@dimen/text_size14" android:textColor="@color/color_light_gray" android:gravity="center" android:id="@+id/tv_shutter" android:layout_width="wrap_content" android:layout_height="30dp" android:text="@string/label_shutter_interval" android:paddingStart="15dp" android:paddingEnd="1dp" android:layout_alignParentStart="true"/>
+                    <com.freevisiontech.fvmobile.widget.view.StringScrollPicker android:id="@+id/picker_shutter" android:layout_width="match_parent" android:layout_height="45dp" android:layout_below="@+id/tv_shutter" app:spv_visible_item_count="5" app:spv_is_circulation="false" app:spv_disallow_intercept_touch="true" app:spv_orientation="1" app:spv_min_text_size="14dp" app:spv_max_text_size="16dp" app:spv_max_line_width="225dp" app:spv_alignment="1"/>
+                </RelativeLayout>
+            </LinearLayout>
+            <View android:background="@color/color_light_gray" android:layout_width="match_parent" android:layout_height="1dp"/>
+            <RelativeLayout android:id="@+id/layout_lapse_time_duration" android:layout_width="match_parent" android:layout_height="75dp">
+                <TextView android:textSize="@dimen/text_size14" android:textColor="@color/color_light_gray" android:gravity="center" android:id="@+id/tv_duration" android:layout_width="wrap_content" android:layout_height="30dp" android:text="@string/label_time_of_duration" android:paddingStart="15dp" android:paddingEnd="1dp" android:layout_alignParentStart="true"/>
+                <com.freevisiontech.fvmobile.widget.view.StringScrollPicker android:id="@+id/picker_duration" android:paddingBottom="28dp" android:layout_width="match_parent" android:layout_height="45dp" android:layout_below="@+id/tv_duration" app:spv_visible_item_count="5" app:spv_is_circulation="false" app:spv_disallow_intercept_touch="true" app:spv_orientation="1" app:spv_min_text_size="14dp" app:spv_max_text_size="16dp" app:spv_max_line_width="225dp" app:spv_alignment="1"/>
+            </RelativeLayout>
+            <View android:background="@color/color_light_gray" android:layout_width="match_parent" android:layout_height="1dp"/>
+            <LinearLayout android:layout_width="match_parent" android:layout_height="30dp">
+                <TextView android:textSize="@dimen/text_size14" android:textColor="@color/color_light_gray" android:gravity="center" android:id="@+id/tv_video_duration" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="@string/label_produce_video_time" android:paddingStart="15dp" android:paddingEnd="1dp" android:layout_alignParentStart="true"/>
+            </LinearLayout>
+            <View android:background="@color/color_light_gray" android:layout_width="match_parent" android:layout_height="1dp"/>
+            <RelativeLayout android:orientation="horizontal" android:id="@+id/rl_recording_long_light" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="@dimen/text_size15" android:textColor="@color/color_black4" android:gravity="center" android:layout_width="wrap_content" android:layout_height="35dp" android:layout_marginLeft="15dp" android:text="@string/label_time_lapse_recording_long_light"/>
+                <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15dp" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+                    <com.alanapi.switchbutton.SwitchButton android:id="@+id/recording_long_light_switch" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" app:swThumbColor="@color/color_white" app:swBackColor="@color/switch_select_bg_color_black4"/>
+                    <LinearLayout android:orientation="horizontal" android:id="@+id/ll_recording_long_light_switch" android:background="@color/transparent" android:visibility="gone" android:layout_width="40dp" android:layout_height="25dp"/>
+                </RelativeLayout>
+            </RelativeLayout>
+            <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
+                <RelativeLayout android:orientation="horizontal" android:id="@+id/rl_tripod_model" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="@dimen/text_size15" android:textColor="@color/color_black4" android:gravity="center" android:id="@+id/tripod_mode" android:layout_width="wrap_content" android:layout_height="35dp" android:layout_marginLeft="15dp" android:text="@string/tripod_mode"/>
+                    <com.alanapi.switchbutton.SwitchButton android:id="@+id/tripod_switch" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15dp" android:layout_alignParentRight="true" android:layout_centerVertical="true" app:swThumbColor="@color/color_white" app:swBackColor="@color/switch_select_bg_color_black4"/>
+                </RelativeLayout>
+                <TextView android:textSize="@dimen/text_size12" android:textColor="@color/ff76" android:gravity="center" android:id="@+id/tv_hint" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/label_timelapse_time_too_shorter" android:layout_below="@+id/rl_tripod_model" android:layout_centerHorizontal="true" android:layout_marginStart="15dp" android:layout_marginEnd="10dp"/>
+                <Button android:textSize="@dimen/text_size16" android:textColor="@color/color_white" android:gravity="center" android:id="@+id/btn_start" android:background="@drawable/sp_black1_round_bg" android:layout_width="116dp" android:layout_height="43dp" android:layout_marginTop="32dp" android:layout_marginBottom="10dp" android:text="@string/label_start" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" android:textAllCaps="false"/>
+            </RelativeLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@+id/layout_camera_shortcut_pop_vertical_bottom" android:layout_width="55dp" android:layout_height="330dp"/>
+    </LinearLayout>
+</LinearLayout>

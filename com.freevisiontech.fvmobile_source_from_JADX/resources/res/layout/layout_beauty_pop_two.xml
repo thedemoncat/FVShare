@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="330dp" android:layout_height="330dp" android:layout_marginLeft="15dp" android:layout_marginRight="15dp" android:rotation="-90">
+    <LinearLayout android:orientation="vertical" android:id="@+id/layout_beauty_pop_top_linear" android:layout_width="330dp" android:layout_height="249dp"/>
+    <RelativeLayout android:id="@+id/rl_beauty_content" android:background="@drawable/sp_white60_round5_bg" android:layout_width="330dp" android:layout_height="81dp">
+        <TextView android:textSize="14dp" android:textColor="@color/color_black4" android:gravity="center" android:id="@+id/tv_title" android:layout_width="match_parent" android:layout_height="36dp" android:text="@string/label_beauty_level" android:layout_above="@+id/tv_seek_bar"/>
+        <RelativeLayout android:id="@+id/tv_seek_bar" android:layout_width="match_parent" android:layout_height="37dp" android:layout_alignParentBottom="true">
+            <TextView android:textSize="12dp" android:textColor="@color/color_black4" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/label_nature" android:layout_centerVertical="true" android:paddingStart="5dp" android:paddingEnd="10dp" android:layout_toStartOf="@+id/seekbar_relative"/>
+            <RelativeLayout android:id="@+id/seekbar_relative" android:layout_width="225dp" android:layout_height="wrap_content" android:layout_centerHorizontal="true" android:layout_centerVertical="true">
+                <TextView android:background="@color/color_black2" android:layout_width="190dp" android:layout_height="2dp" android:layout_centerInParent="true"/>
+                <SeekBar android:id="@+id/seekbar" android:layout_width="225dp" android:layout_height="wrap_content" android:maxHeight="2dp" android:progressDrawable="@drawable/seekbar_style_black4" android:minHeight="2dp" android:thumb="@mipmap/ic_seekbar_thumb"/>
+            </RelativeLayout>
+            <TextView android:textSize="12dp" android:textColor="@color/color_black4" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/label_white_skinned" android:layout_centerVertical="true" android:paddingStart="5dp" android:paddingEnd="10dp" android:layout_toEndOf="@+id/seekbar_relative"/>
+        </RelativeLayout>
+    </RelativeLayout>
+</LinearLayout>

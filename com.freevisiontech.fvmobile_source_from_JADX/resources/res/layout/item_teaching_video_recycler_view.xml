@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:gravity="center_vertical" android:paddingTop="25dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15dp">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="9dp" android:src="@mipmap/teaching_video_point"/>
+        <TextView android:textSize="16sp" android:id="@+id/video_item_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="产品简介"/>
+    </LinearLayout>
+    <TextView android:textSize="14sp" android:autoLink="web" android:id="@+id/video_item_content" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="27dp" android:layout_marginTop="7dp" android:layout_marginRight="15dp" android:text="http://v.youku.com/v_show/id_XMzc2NzYwMzI0OA==.html?spm=a2hzp.8253869.0.0"/>
+</LinearLayout>

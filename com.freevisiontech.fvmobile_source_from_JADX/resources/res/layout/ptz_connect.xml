@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.percent.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.freevisiontech.fvmobile.widget.PercentLinearLayout android:orientation="vertical" android:background="@drawable/edit_button_buttom_paint_round_bg10" android:layout_width="0dp" android:layout_height="0dp" android:layout_marginLeft="10dp" android:layout_marginTop="16dp" android:layout_marginRight="10dp" android:layout_marginBottom="10dp" android:layout_below="@+id/top_title" android:elevation="2dp" app:layout_widthPercent="100%" app:layout_heightPercent="100%">
+        <RelativeLayout android:id="@+id/rl_content_scan_before" android:layout_width="0dp" android:layout_height="0dp" app:layout_widthPercent="100%" app:layout_heightPercent="70%">
+            <ImageView android:id="@+id/iv_background" android:layout_width="match_parent" android:layout_height="wrap_content" android:src="@mipmap/banner" android:scaleType="centerCrop"/>
+            <LinearLayout android:background="#32000000" android:layout_width="match_parent" android:layout_height="40dp" android:layout_alignBottom="@+id/iv_background">
+                <TextView android:textStyle="bold" android:textColor="#ffffffff" android:gravity="center_horizontal" android:layout_gravity="center_vertical" android:id="@+id/ptz_device_type_name" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="VILTA MOBILE" android:fontFamily="GBK"/>
+            </LinearLayout>
+        </RelativeLayout>
+        <android.support.percent.PercentRelativeLayout android:layout_width="0dp" android:layout_height="wrap_content" app:layout_widthPercent="100%">
+            <TextView android:textSize="12sp" android:textColor="#555555" android:ellipsize="end" android:gravity="center_horizontal" android:id="@+id/ptz_connect_hint" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginTop="16dp" android:layout_marginBottom="13dp" android:text="@string/home_fragment_desc" android:maxLines="3" android:layout_alignParentTop="true" android:fontFamily="PingFangSC-Regular" app:layout_widthPercent="80%" app:layout_marginLeftPercent="10%" app:layout_marginRightPercent="10%"/>
+            <Button android:textSize="15sp" android:textColor="#ffffff" android:id="@+id/btn_connect_ptz" android:background="@drawable/connect_ptz_btn" android:visibility="visible" android:layout_width="114dp" android:layout_height="42dp" android:layout_marginBottom="20dp" android:text="@string/home_fragment_connect_yuntai" android:layout_below="@+id/ptz_connect_hint" android:layout_centerHorizontal="true" android:textAllCaps="false"/>
+        </android.support.percent.PercentRelativeLayout>
+    </com.freevisiontech.fvmobile.widget.PercentLinearLayout>
+</android.support.percent.PercentRelativeLayout>

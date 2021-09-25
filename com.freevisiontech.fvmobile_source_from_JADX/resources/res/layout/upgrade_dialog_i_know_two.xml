@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:orientation="vertical" android:id="@+id/rl_upgrade_pre" android:background="@drawable/free_dialog_bg" android:visibility="visible" android:layout_width="325dp" android:layout_height="143dp" android:layout_centerInParent="true">
+        <TextView android:textSize="18dp" android:textStyle="bold" android:textColor="@color/color_black4" android:gravity="center" android:id="@+id/update_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20dp" android:text="@string/text_fv_ptz_setting_fpv_follow_mode" android:layout_below="@+id/iv_pictrue"/>
+        <ScrollView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="15dp" android:layout_above="@+id/ll_upgrade_btn_pre" android:layout_below="@+id/update_title">
+            <LinearLayout android:orientation="vertical" android:id="@+id/ll_upgrade_point" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="14dp" android:textColor="@color/color_black4" android:gravity="center_horizontal" android:id="@+id/tv_upgrade_pre1" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="45dp" android:layout_marginRight="45dp" android:text="@string/upgrade_go_setting_message"/>
+            </LinearLayout>
+        </ScrollView>
+        <View android:id="@+id/line1" android:background="@color/color_black3" android:layout_width="match_parent" android:layout_height="2px" android:layout_above="@+id/ll_upgrade_btn_pre"/>
+        <LinearLayout android:orientation="horizontal" android:id="@+id/ll_upgrade_btn_pre" android:layout_width="match_parent" android:layout_height="50dp" android:layout_alignParentBottom="true">
+            <Button android:textSize="16dp" android:textColor="@color/color_black4" android:gravity="center" android:id="@+id/finish" android:background="@null" android:visibility="visible" android:layout_width="match_parent" android:layout_height="50dp" android:text="@string/upgrade_go_setting_message_ok" android:singleLine="true" android:layout_weight="1" android:layout_alignParentBottom="true" android:textAllCaps="false"/>
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

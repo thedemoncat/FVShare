@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@color/transparent" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:id="@+id/layout_camera_shortcut_pop_out_linear" android:background="@color/transparent" android:layout_width="256dp" android:layout_height="256dp">
+        <LinearLayout android:orientation="vertical" android:id="@+id/layout_camera_shortcut_pop_vertical_bottom_top" android:visibility="visible" android:layout_width="256dp" android:layout_height="38dp"/>
+        <RelativeLayout android:orientation="vertical" android:id="@+id/layout_camera_shortcut_pop_int_linear" android:background="@drawable/sp_white_round8_bg" android:layout_width="256dp" android:layout_height="180dp">
+            <LinearLayout android:orientation="vertical" android:layout_width="256dp" android:layout_height="wrap_content" android:layout_alignParentTop="true">
+                <RelativeLayout android:layout_width="match_parent" android:layout_height="45dp">
+                    <TextView android:textSize="@dimen/text_size16" android:textColor="@color/color_black55" android:id="@+id/tv_mark_point_change_setting" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/label_mark_point_change_setting" android:layout_centerInParent="true"/>
+                    <View android:background="@color/gray_e5" android:layout_width="match_parent" android:layout_height="1dp" android:layout_alignParentBottom="true"/>
+                </RelativeLayout>
+                <RelativeLayout android:id="@+id/rl_mark_point_change_speed" android:background="@drawable/main_topbar_pop" android:paddingLeft="17dp" android:layout_width="match_parent" android:layout_height="45dp">
+                    <TextView android:textSize="@dimen/text_size14" android:textColor="@color/color_black55" android:gravity="center" android:id="@+id/tv_mark_point_change_speed" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="@string/label_mark_point_change_speed" android:layout_centerVertical="true"/>
+                    <SeekBar android:id="@+id/seekbar_mark_point_change_speed" android:layout_width="135dp" android:layout_height="wrap_content" android:layout_marginLeft="76dp" android:maxHeight="2dp" android:max="6" android:progressDrawable="@drawable/seekbar_style_black4" android:minHeight="2dp" android:thumb="@mipmap/ic_seekbar_thumb" android:layout_centerVertical="true"/>
+                    <TextView android:textSize="@dimen/text_size14" android:textColor="@color/color_light_gray2" android:gravity="center" android:id="@+id/tv_mark_point_change_speed_set" android:layout_width="45dp" android:layout_height="match_parent" android:text="1" android:layout_alignParentRight="true"/>
+                </RelativeLayout>
+                <View android:background="@color/gray_e5" android:layout_width="match_parent" android:layout_height="1dp"/>
+                <RelativeLayout android:id="@+id/rl_mark_point_change_smooth" android:background="@drawable/main_topbar_pop" android:paddingLeft="@dimen/text_size17" android:layout_width="match_parent" android:layout_height="45dp">
+                    <TextView android:textSize="@dimen/text_size14" android:textColor="@color/color_black4" android:gravity="center" android:id="@+id/tv_mark_point_change_smooth" android:layout_width="wrap_content" android:layout_height="40dp" android:text="@string/label_mark_point_change_smooth" android:layout_centerVertical="true"/>
+                    <SeekBar android:id="@+id/seekbar_mark_point_change_smooth" android:layout_width="135dp" android:layout_height="wrap_content" android:layout_marginLeft="76dp" android:maxHeight="2dp" android:max="4" android:progressDrawable="@drawable/seekbar_style_black4" android:minHeight="2dp" android:thumb="@mipmap/ic_seekbar_thumb" android:layout_centerVertical="true"/>
+                    <TextView android:textSize="@dimen/text_size15" android:textColor="@color/color_light_gray2" android:gravity="center" android:id="@+id/tv_mark_point_change_smooth_set" android:layout_width="45dp" android:layout_height="match_parent" android:text="1" android:layout_alignParentRight="true"/>
+                </RelativeLayout>
+            </LinearLayout>
+            <RelativeLayout android:orientation="vertical" android:id="@+id/ll_close" android:layout_width="match_parent" android:layout_height="45dp" android:layout_alignParentBottom="true">
+                <View android:background="@color/gray_e5" android:layout_width="match_parent" android:layout_height="1dp"/>
+                <TextView android:textSize="@dimen/text_size15" android:textColor="@color/color_black4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/label_close" android:layout_centerInParent="true"/>
+            </RelativeLayout>
+        </RelativeLayout>
+        <LinearLayout android:orientation="vertical" android:id="@+id/layout_camera_shortcut_pop_vertical_bottom" android:layout_width="256dp" android:layout_height="38dp"/>
+    </LinearLayout>
+</LinearLayout>

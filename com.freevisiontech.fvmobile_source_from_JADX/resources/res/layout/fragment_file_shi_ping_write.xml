@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <android.support.p003v7.widget.RecyclerView android:id="@+id/fragment_recycler_shiping" android:scrollbars="vertical" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginBottom="44dp"/>
+    <RelativeLayout android:id="@+id/fragment_file_shiping_write_none" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+        <ImageView android:background="@mipmap/ic_file_none" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true"/>
+    </RelativeLayout>
+    <LinearLayout android:gravity="center" android:id="@+id/file_paint_to_activity" android:background="@drawable/file_paint_bg" android:visibility="gone" android:layout_width="45dp" android:layout_height="45dp" android:layout_marginBottom="45dp" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true">
+        <ImageView android:background="@drawable/ic_bianji" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:id="@+id/fragment_file_shiping_create" android:layout_width="match_parent" android:layout_height="44dp" android:layout_alignParentBottom="true">
+        <TextView android:id="@+id/video_edit_to_create" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/file_go_select" android:alpha="0.2"/>
+    </LinearLayout>
+</RelativeLayout>

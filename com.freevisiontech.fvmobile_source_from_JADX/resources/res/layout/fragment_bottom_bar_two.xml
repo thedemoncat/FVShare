@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="wrap_content" android:layout_height="match_parent">
+    <RelativeLayout android:id="@+id/rl_left" android:layout_width="50dp" android:layout_height="match_parent">
+        <RelativeLayout android:gravity="center" android:orientation="vertical" android:id="@+id/fragment_buttom_bar_photo_check" android:visibility="visible" android:layout_width="50dp" android:layout_height="wrap_content" android:layout_centerInParent="true">
+            <LinearLayout android:gravity="center" android:background="@mipmap/ic_bottom_bar_front" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="48dp" android:layout_alignParentRight="true">
+                <TextView android:textSize="@dimen/text_size15" android:textColor="@color/color_black1" android:gravity="center" android:layout_width="wrap_content" android:layout_height="40dp" android:text="@string/label_photo" android:rotation="-90"/>
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/btn_video_mode" android:background="@mipmap/ic_bottom_bar_back" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true">
+                <TextView android:textSize="@dimen/text_size12" android:textColor="@color/color_black1" android:gravity="center" android:layout_width="wrap_content" android:layout_height="30dp" android:text="@string/label_video" android:rotation="-90"/>
+            </LinearLayout>
+        </RelativeLayout>
+        <RelativeLayout android:gravity="center" android:orientation="vertical" android:id="@+id/fragment_buttom_bar_video_check" android:visibility="gone" android:layout_width="50dp" android:layout_height="wrap_content" android:layout_centerInParent="true">
+            <LinearLayout android:gravity="center" android:background="@mipmap/ic_bottom_bar_front" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true">
+                <TextView android:textSize="@dimen/text_size15" android:textColor="@color/color_black1" android:gravity="center" android:layout_width="wrap_content" android:layout_height="30dp" android:text="@string/label_video" android:rotation="-90"/>
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/btn_photo_mode" android:background="@mipmap/ic_bottom_bar_back" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="61dp" android:layout_alignParentRight="true">
+                <TextView android:textSize="@dimen/text_size12" android:textColor="@color/color_black1" android:gravity="center" android:layout_width="wrap_content" android:layout_height="30dp" android:text="@string/label_photo" android:rotation="-90"/>
+            </LinearLayout>
+        </RelativeLayout>
+        <ImageView android:id="@+id/btn_common_pop" android:background="@drawable/sp_white50_round_5dp_bg" android:visibility="invisible" android:layout_width="31dp" android:layout_height="31dp" android:layout_marginBottom="15dp" android:src="@mipmap/ic_180_small" android:scaleType="centerInside" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" android:alpha="0.5" android:layout_marginEnd="8dp" android:layout_alignParentEnd="true"/>
+        <ImageView android:id="@+id/btn_open_beauty" android:background="@drawable/sp_white50_round_5dp_bg" android:visibility="invisible" android:layout_width="31dp" android:layout_height="31dp" android:layout_marginBottom="10dp" android:src="@mipmap/ic_open_beauty" android:scaleType="centerInside" android:layout_above="@+id/btn_common_pop" android:layout_centerHorizontal="true" android:alpha="0.5" android:layout_marginEnd="8dp" android:layout_alignParentEnd="true"/>
+        <ImageView android:id="@+id/btn_ble_connect" android:paddingTop="5dp" android:paddingBottom="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:src="@mipmap/ic_ble_connect" android:scaleType="centerInside" android:layout_marginEnd="8dp" android:layout_alignParentEnd="true"/>
+        <ImageView android:id="@+id/btn_camera_hand_model_shortcut" android:paddingBottom="5dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:src="@mipmap/camera_hand_model_shortcut" android:scaleType="centerInside" android:layout_below="@+id/btn_ble_connect" android:layout_marginEnd="8dp" android:layout_alignParentEnd="true"/>
+    </RelativeLayout>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/ll_layout_video_starting_volume" android:visibility="gone" android:layout_width="50dp" android:layout_height="50dp" android:layout_marginTop="5dp" android:layout_toEndOf="@+id/rl_left">
+        <ImageView android:id="@+id/btn_video_starting_volume" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/ic_video_starting_volume_four" android:scaleType="centerInside"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@+id/ll_layout" android:background="@drawable/sp_white50_round5_bg" android:layout_width="50dp" android:layout_height="match_parent" android:layout_marginTop="15dp" android:layout_marginBottom="15dp" android:layout_marginEnd="8dp" android:layout_toEndOf="@+id/rl_left">
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+            <com.makeramen.roundedimageview.RoundedImageView android:layout_gravity="center" android:id="@+id/btn_icon_show" android:layout_width="38dp" android:layout_height="38dp" android:scaleType="centerCrop" android:layout_centerInParent="true" app:riv_corner_radius_top_left="3dp" app:riv_corner_radius_top_right="3dp" app:riv_corner_radius_bottom_left="3dp" app:riv_corner_radius_bottom_right="3dp"/>
+        </RelativeLayout>
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+            <ImageView android:id="@+id/btn_follow" android:background="@null" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@mipmap/ic_follow_close" android:scaleType="centerInside" android:layout_centerHorizontal="true" android:layout_centerVertical="true"/>
+            <ImageView android:id="@+id/btn_follow_status" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="2dp" android:src="@mipmap/ic_right_dot_red" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+        </RelativeLayout>
+        <ImageButton android:layout_gravity="center" android:id="@+id/btn_photo_video" android:background="@color/transparent" android:layout_width="match_parent" android:layout_height="0dp" android:src="@drawable/sl_photo_mode" android:scaleType="centerInside" android:layout_weight="1"/>
+        <LinearLayout android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+            <ImageView android:layout_gravity="center" android:id="@+id/btn_lens_switch" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@mipmap/ic_lens_switch" android:scaleType="centerInside"/>
+        </LinearLayout>
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+            <ImageView android:id="@+id/btn_flash_switch" android:background="@null" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@mipmap/ic_flash_auto" android:scaleType="centerInside" android:layout_centerHorizontal="true" android:layout_centerVertical="true"/>
+            <ImageView android:id="@+id/btn_flash_switch_status" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="2dp" android:src="@mipmap/ic_right_dot" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+        </RelativeLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@+id/ll_bottom_shadow" android:visibility="gone" android:layout_width="58dp" android:layout_height="match_parent" android:layout_toEndOf="@+id/rl_left"/>
+</RelativeLayout>

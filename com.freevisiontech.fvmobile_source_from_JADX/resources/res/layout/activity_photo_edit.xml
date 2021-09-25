@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@color/f6" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <ImageView android:id="@+id/act_photo_edit_imageview" android:background="@color/transparent" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginBottom="167dp"/>
+        <include layout="@layout/activity_photo_edit_buttom"/>
+        <include layout="@layout/activity_photo_edit_buttom_caijian"/>
+        <include layout="@layout/activity_photo_edit_buttom_tiaojie"/>
+        <include layout="@layout/activity_photo_edit_buttom_paint"/>
+        <include layout="@layout/activity_photo_edit_buttom_meiyan"/>
+        <include layout="@layout/activity_photo_edit_buttom_lvjing"/>
+        <include layout="@layout/activity_photo_edit_buttom_masaike"/>
+    </RelativeLayout>
+    <RelativeLayout android:id="@+id/act_photo_edit_return_and_go" android:background="@drawable/edit_button_white_touming_bg" android:layout_width="130dp" android:layout_height="38dp" android:layout_marginBottom="180dp" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true">
+        <LinearLayout android:gravity="center" android:id="@+id/act_ic_edit_left" android:layout_width="38dp" android:layout_height="38dp" android:layout_marginLeft="15dp" android:layout_alignParentLeft="true" android:layout_centerVertical="true">
+            <ImageView android:background="@mipmap/ic_edit_left" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:id="@+id/act_ic_edit_right" android:layout_width="38dp" android:layout_height="38dp" android:layout_marginRight="15dp" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+            <ImageView android:background="@mipmap/ic_edit_right" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        </LinearLayout>
+    </RelativeLayout>
+    <LinearLayout android:gravity="center" android:id="@+id/act_edit_return" android:background="@drawable/edit_button_paint_round_bg" android:layout_width="38dp" android:layout_height="38dp" android:layout_marginLeft="15dp" android:layout_marginTop="15dp" android:layout_alignParentLeft="true">
+        <ImageView android:background="@mipmap/ic_edit_return" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:id="@+id/act_edit_over" android:background="@drawable/edit_button_paint_round_bg" android:layout_width="38dp" android:layout_height="38dp" android:layout_marginTop="15dp" android:layout_marginRight="15dp" android:layout_alignParentRight="true">
+        <ImageView android:background="@mipmap/ic_edit_over" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <TextView android:id="@+id/act_photo_edit_jiazai" android:background="@mipmap/ic_image_loading" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true"/>
+    <FrameLayout android:focusable="true" android:focusableInTouchMode="true" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:id="@+id/wrapper_settings" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="16dp" android:layout_marginTop="16dp" android:layout_marginRight="16dp" android:layout_marginBottom="16dp">
+            <Button android:textAppearance="?android:attr/textAppearanceMedium" android:textStyle="bold" android:textColor="@android:color/white" android:id="@+id/button_crop" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Pick Crop" android:textAllCaps="true"/>
+            <View android:background="@color/colorAccent" android:layout_width="match_parent" android:layout_height="1dp" android:layout_margin="5dp"/>
+            <RadioGroup android:id="@+id/radio_group_aspect_ratio" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textAppearance="?android:attr/textAppearanceSmall" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Aspect ratio"/>
+                <CheckBox android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/checkbox_freestyle_crop" android:layout_width="match_parent" android:layout_height="wrap_content" android:checked="true" android:text="Freestyle crop"/>
+                <RadioButton android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/radio_dynamic" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Dynamic"/>
+                <RadioButton android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/radio_origin" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Image source"/>
+                <RadioButton android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/radio_square" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Square"/>
+                <LinearLayout android:orientation="horizontal" android:layout_width="140dp" android:layout_height="wrap_content">
+                    <EditText android:gravity="center" android:id="@+id/edit_text_ratio_x" android:layout_width="wrap_content" android:layout_height="wrap_content" android:hint="x" android:layout_weight="1" android:inputType="numberDecimal"/>
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="to"/>
+                    <EditText android:gravity="center" android:id="@+id/edit_text_ratio_y" android:layout_width="wrap_content" android:layout_height="wrap_content" android:hint="y" android:layout_weight="1" android:inputType="numberDecimal"/>
+                </LinearLayout>
+            </RadioGroup>
+            <View android:background="#ff4081" android:layout_width="match_parent" android:layout_height="1dp" android:layout_margin="5dp"/>
+            <TextView android:textAppearance="?android:attr/textAppearanceSmall" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Max cropped image size"/>
+            <CheckBox android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/checkbox_max_size" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Resize image to max size"/>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <EditText android:gravity="center" android:id="@+id/edit_text_max_width" android:layout_width="wrap_content" android:layout_height="wrap_content" android:hint="Width" android:layout_weight="1" android:inputType="number"/>
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="x"/>
+                <EditText android:gravity="center" android:id="@+id/edit_text_max_height" android:layout_width="wrap_content" android:layout_height="wrap_content" android:hint="Height" android:layout_weight="1" android:inputType="number"/>
+            </LinearLayout>
+            <View android:background="#ff4081" android:layout_width="match_parent" android:layout_height="1dp" android:layout_margin="5dp"/>
+            <RadioGroup android:id="@+id/radio_group_compression_settings" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textAppearance="?android:attr/textAppearanceSmall" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Compression settings"/>
+                <RadioButton android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/radio_jpeg" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="JPEG"/>
+                <RadioButton android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/radio_png" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="PNG"/>
+                <TextView android:textAppearance="?android:attr/textAppearanceSmall" android:layout_gravity="center" android:id="@+id/text_view_quality" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                <SeekBar android:id="@+id/seekbar_quality" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+            </RadioGroup>
+            <View android:background="#ff4081" android:layout_width="match_parent" android:layout_height="1dp" android:layout_margin="5dp"/>
+            <TextView android:textAppearance="?android:attr/textAppearanceSmall" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="UI"/>
+            <CheckBox android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/checkbox_hide_bottom_controls" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Hide bottom UI controls"/>
+        </LinearLayout>
+    </FrameLayout>
+</RelativeLayout>

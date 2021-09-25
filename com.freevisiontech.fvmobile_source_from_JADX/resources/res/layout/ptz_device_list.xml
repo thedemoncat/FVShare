@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/rl_content_scaning" android:background="#ffffff" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include android:id="@+id/top_title" layout="@layout/layout_title"/>
+    <ImageView android:id="@+id/img_ptz_scan" android:layout_width="match_parent" android:layout_height="wrap_content" android:src="@mipmap/banner2" android:scaleType="centerCrop" android:layout_below="@+id/top_title" android:layout_alignParentStart="true"/>
+    <android.support.percent.PercentRelativeLayout android:id="@+id/rl_device" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignBottom="@+id/img_ptz_scan">
+        <LinearLayout android:background="#32000000" android:layout_width="match_parent" android:layout_height="39dp" android:layout_alignParentLeft="true" android:layout_alignParentStart="true">
+            <TextView android:textSize="20sp" android:textStyle="bold" android:textColor="#ffffffff" android:gravity="center_horizontal" android:layout_gravity="center_vertical" android:id="@+id/ptz_device_type_name" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="VILTA MOBILE 300"/>
+        </LinearLayout>
+    </android.support.percent.PercentRelativeLayout>
+    <RelativeLayout android:id="@+id/rl_back_and_enter" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="25dp" android:layout_below="@+id/rl_device">
+        <TextView android:textSize="14dp" android:textColor="@color/color_black4" android:id="@+id/tv_back" android:background="@drawable/file_check_button_selector" android:paddingLeft="15dp" android:paddingTop="12dp" android:paddingRight="15dp" android:paddingBottom="12dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/back" android:layout_alignParentLeft="true" android:layout_centerVertical="true"/>
+        <TextView android:textSize="16dp" android:textColor="@color/color_black4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/bluetooth" android:layout_centerInParent="true" android:layout_centerVertical="true"/>
+        <TextView android:textSize="14dp" android:textColor="@color/color_black4" android:id="@+id/tv_enter_camera" android:background="@drawable/file_check_button_selector" android:paddingLeft="15dp" android:paddingTop="12dp" android:paddingRight="15dp" android:paddingBottom="12dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/enter_camera" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+    </RelativeLayout>
+    <RelativeLayout android:id="@+id/rl_nothing" android:layout_width="match_parent" android:layout_height="42dp" android:layout_marginTop="4dp" android:layout_below="@+id/rl_back_and_enter">
+        <View android:background="@color/color_line" android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginLeft="15dp" android:layout_marginRight="15dp" android:layout_alignParentTop="true"/>
+        <TextView android:textSize="14dp" android:textColor="@color/color_light_gray2" android:id="@+id/tv_search" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:text="@string/searched_device" android:layout_alignParentLeft="true" android:layout_centerInParent="true"/>
+        <ImageView android:id="@+id/iv_refresh_ble" android:paddingLeft="15dp" android:paddingTop="5dp" android:paddingRight="15dp" android:paddingBottom="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/shuaxin" android:layout_alignParentRight="true" android:layout_centerInParent="true"/>
+        <View android:background="@color/color_line" android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginLeft="15dp" android:layout_marginRight="15dp" android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+    <ListView android:id="@+id/deviceLv" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="wrap_content" android:divider="@color/color_line_listview" android:dividerHeight="1dp" android:layout_below="@+id/rl_nothing"/>
+</RelativeLayout>

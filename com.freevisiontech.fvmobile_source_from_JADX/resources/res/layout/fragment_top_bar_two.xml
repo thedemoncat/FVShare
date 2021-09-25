@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="wrap_content" android:layout_height="match_parent">
+    <RelativeLayout android:orientation="vertical" android:id="@+id/ll_root" android:background="@drawable/sp_white50_round5_bg" android:layout_width="50dp" android:layout_height="match_parent" android:layout_marginTop="15dp" android:layout_marginBottom="15dp">
+        <LinearLayout android:orientation="horizontal" android:id="@+id/btn_bg_color_yellow" android:background="@mipmap/ic_topbar_status_bg_circle_yellow" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <LinearLayout android:orientation="vertical" android:layout_width="50dp" android:layout_height="match_parent">
+            <RelativeLayout android:id="@+id/rl_camera" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+                <ImageView android:id="@+id/btn_camera" android:background="@null" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/ic_camera" android:scaleType="centerInside" android:layout_centerHorizontal="true" android:layout_centerVertical="true"/>
+                <ImageView android:id="@+id/btn_camera_status" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="2dp" android:src="@mipmap/ic_right_dot" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+            </RelativeLayout>
+            <RelativeLayout android:id="@+id/rl_vilta" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+                <ImageView android:id="@+id/btn_vilta" android:background="@null" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/ic_mobile_vilta" android:scaleType="centerInside" android:layout_centerHorizontal="true" android:layout_centerVertical="true"/>
+                <ImageView android:id="@+id/btn_vilta_status" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="2dp" android:src="@mipmap/ic_right_dot" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+            </RelativeLayout>
+            <RelativeLayout android:id="@+id/rl_setting" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+                <ImageView android:id="@+id/btn_setting" android:background="@null" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/ic_setting" android:scaleType="centerInside" android:layout_centerHorizontal="true" android:layout_centerVertical="true"/>
+                <ImageView android:id="@+id/btn_setting_status" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="2dp" android:src="@mipmap/ic_right_dot_red" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+            </RelativeLayout>
+            <RelativeLayout android:id="@+id/rl_back" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+                <ImageView android:id="@+id/btn_back" android:background="@null" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/ic_home_back" android:scaleType="centerInside" android:layout_centerHorizontal="true" android:layout_centerVertical="true"/>
+                <ImageView android:id="@+id/btn_back_status" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="2dp" android:src="@mipmap/ic_right_dot_red" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+    <RelativeLayout android:id="@+id/rl_battery" android:layout_width="80dp" android:layout_height="wrap_content" android:layout_marginTop="30dp" android:layout_toRightOf="@+id/ll_root">
+        <RelativeLayout android:id="@+id/rl_phone_battery" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/text_size10" android:textColor="@color/white" android:id="@+id/tv_phone_battery" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:layout_marginRight="5dp" android:text="@string/phone" android:layout_alignParentLeft="true"/>
+            <ImageView android:id="@+id/icon_phone_battery" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/ic_battery_full" android:scaleType="centerInside" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+            <TextView android:textSize="@dimen/text_size10" android:textColor="@color/color_white" android:gravity="left" android:id="@+id/tv_phone_battery_remain" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toLeftOf="@+id/icon_phone_battery" android:layout_centerVertical="true" android:layout_marginEnd="5dp"/>
+        </RelativeLayout>
+        <RelativeLayout android:id="@+id/rl_ptz_battery" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:layout_below="@+id/rl_phone_battery" android:layout_centerHorizontal="true">
+            <TextView android:textSize="@dimen/text_size10" android:textColor="@color/white" android:id="@+id/tv_ptz_battery" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:layout_marginRight="5dp" android:text="@string/vilta" android:layout_alignParentLeft="true"/>
+            <ImageView android:id="@+id/icon_ptz_battery" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="centerInside" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+            <TextView android:textSize="@dimen/text_size10" android:textColor="@color/color_white" android:gravity="left" android:id="@+id/tv_ptz_battery_remain" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:layout_toLeftOf="@+id/icon_ptz_battery" android:layout_centerVertical="true" android:layout_marginEnd="5dp"/>
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

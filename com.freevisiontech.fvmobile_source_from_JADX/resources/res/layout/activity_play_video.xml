@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="@color/black" android:layout_width="match_parent" android:layout_height="match_parent">
+    <fragment android:name="p010me.iwf.photopicker.fragment.ImagePagerFragment" android:id="@+id/photoPagerFragment" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <include layout="@layout/layout_lookphoto_title"/>
+    <include layout="@layout/layout_file_buttom"/>
+    <TextView android:textSize="16sp" android:textColor="@color/color_black" android:gravity="center" android:layout_gravity="bottom" android:id="@+id/photo_page" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="15dp" android:text="0"/>
+    <TextView android:textColor="@color/color_black" android:gravity="center" android:layout_gravity="bottom|right|center_vertical|center_horizontal|center" android:id="@+id/photo_save" android:visibility="gone" android:layout_width="80dp" android:layout_height="30dp" android:layout_marginRight="5dp" android:layout_marginBottom="15dp" android:text="保存图片"/>
+</FrameLayout>

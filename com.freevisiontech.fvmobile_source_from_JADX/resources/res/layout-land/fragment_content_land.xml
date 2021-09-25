@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/content_layout" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.freevisiontech.cameralib.CameraView android:id="@+id/surfaceView" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_centerInParent="true"/>
+    <ImageView android:id="@+id/icon_griding" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="centerInside"/>
+    <LinearLayout android:orientation="horizontal" android:id="@+id/ll_seekbar" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="25dp" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true">
+        <ImageView android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/ic_minus_sign"/>
+        <SeekBar android:id="@+id/seekbar_focal_length" android:layout_width="285dp" android:layout_height="wrap_content" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" style="@style/Widget.SeekBar.Normal"/>
+        <ImageView android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/ic_plus_sign"/>
+    </LinearLayout>
+    <ImageView android:id="@+id/btn_ble_connect" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="20dp" android:src="@mipmap/ic_ble_connect" android:layout_alignParentBottom="true" android:layout_marginStart="10dp" android:layout_alignParentStart="true"/>
+    <ImageView android:id="@+id/btn_open_beauty" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:src="@mipmap/ic_open_beauty" android:layout_alignParentTop="true" android:layout_marginStart="10dp" android:layout_alignParentStart="true"/>
+    <TextView android:textSize="50dp" android:textStyle="bold" android:textColor="@color/color_white" android:id="@+id/tv_timer" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true"/>
+    <RelativeLayout android:id="@+id/rl_focus" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <ImageView android:id="@+id/btn_manual_focus" android:background="@mipmap/ic_manual_foucus" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true"/>
+        <com.freevisiontech.fvmobile.widget.VerticalSeekBar android:id="@+id/seekbar_brightness" android:layout_width="wrap_content" android:layout_height="122dp" android:max="100" android:progress="50" android:layout_marginStart="8dp" android:layout_toEndOf="@+id/btn_manual_focus" style="@style/Widget.SeekBar.Normal2"/>
+    </RelativeLayout>
+</RelativeLayout>

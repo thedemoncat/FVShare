@@ -1,0 +1,50 @@
+package com.freevisiontech.cameralib.impl.Camera2;
+
+import com.freevisiontech.cameralib.AspectRatio;
+import com.freevisiontech.cameralib.Size;
+
+public class Camera2Constants {
+    public static final int AudioBitRate = 256000;
+    public static final int AudioSampleRate = 48000;
+    public static final AspectRatio DEFAULT_ASPECT_RATIO = AspectRatio.m1507of(16, 9);
+    public static final int DEFAULT_AUTO_FOCUS_MODE = 4;
+    public static final int DefaultBackCameraFPS = 30;
+    public static final int DefaultCameraFacing = 1;
+    public static final int DefaultFrontCameraFPS = 30;
+    public static final int ERR_BufferUnderflowException = 10002;
+    public static final int ERR_CONFIGCAMERA = 10001;
+    public static final int ERR_CREATECAMERASESSION = 10000;
+    public static final String Exclude_List_AutoFocus_AutoMode = "sony,xiaomi,oneplus";
+    public static final String Exclude_List_EnablePreviewFrameSurfaceView = "xiaomi";
+    public static final byte JPEG_QUALITY = 100;
+    public static final int Mode_CaptureRequest = 1;
+    public static final int Mode_CaptureResult = 0;
+    public static final int OutPutFormat_Picture = 1;
+    public static final int OutPutFormat_Preview = 0;
+    public static final int OutPutFormat_Video = 2;
+    public static final int Photo_Capture_JEPG = 0;
+    public static final int Photo_Capture_RAW = 1;
+    public static final int Photo_Capture_RAWJEPG = 2;
+    public static final Size RecommendPictureSize = new Size(1920, 1080);
+    public static final int STATE_PICTURE_TAKING = 5;
+    public static final int STATE_PREVIEW = 0;
+    public static final int STATE_WAITING_AF_STATE_FOCUSED_LOCKED = 1;
+    public static final int STATE_WAITING_AF_STATE_FOCUSED_UNLOCKED = 2;
+    public static final int STATE_WAITING_NON_PRECAPTURE = 4;
+    public static final int STATE_WAITING_PRECAPTURE = 3;
+    public static final int VIDEO_STABILIZATION_OFF = 0;
+    public static final int VIDEO_STABILIZATION_ON = 1;
+    public static final int VIDEO_STABILIZATION_TYPE_DIGITAL = 1;
+    public static final int VIDEO_STABILIZATION_TYPE_LEN = 0;
+    public static final int VIDEO_STABILIZATION_TYPE_NONE = -1;
+    public static final int VIDEO_STABILIZATION_UNKNOWN = -1;
+    public static final int VideoBitRate_1080 = 30000000;
+    public static final int VideoBitRate_1080_120 = 35000000;
+    public static final int VideoBitRate_1080_240 = 35000000;
+    public static final int VideoBitRate_2160 = 50000000;
+    public static final int VideoBitRate_480 = 10000000;
+    public static final int VideoBitRate_720 = 20000000;
+    public static final int VideoBitRate_720_120 = 25000000;
+    public static final int VideoBitRate_720_240 = 25000000;
+    public static final int VideoBitRate_High = 45000000;
+}

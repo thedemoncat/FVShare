@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="#ffffff" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="horizontal" android:id="@+id/popup_window_near_people_woman" android:padding="7dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="16dp" android:textColor="#000000" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/popup_window_video_editing_music_remove" android:layout_weight="1"/>
+        <ImageView android:id="@+id/popup_window_near_people_woman_check" android:background="@mipmap/checkbox_off" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <ImageView android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginLeft="10dp" android:layout_marginRight="10dp" android:src="#eeeeee"/>
+    <LinearLayout android:orientation="horizontal" android:id="@+id/popup_window_near_people_man" android:padding="7dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="16dp" android:textColor="#000000" android:id="@+id/popup_window_video_editing_music_bgm" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/popup_window_video_editing_music_bgm" android:layout_weight="1"/>
+        <ImageView android:id="@+id/popup_window_near_people_man_check" android:background="@mipmap/checkbox_off" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <ImageView android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginLeft="10dp" android:layout_marginRight="10dp" android:src="#eeeeee"/>
+</LinearLayout>

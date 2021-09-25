@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:id="@+id/act_edit_buttom_masaike_layout" android:background="@color/white" android:visibility="gone" android:layout_width="match_parent" android:layout_height="167dp" android:layout_alignParentBottom="true">
+    <RelativeLayout android:gravity="center_vertical" android:orientation="vertical" android:visibility="visible" android:layout_width="match_parent" android:layout_height="127dp">
+        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+            <HorizontalScrollView android:visibility="gone" android:scrollbars="none" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <RadioGroup android:gravity="center_vertical" android:orientation="horizontal" android:padding="15dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+                    <RadioButton android:id="@+id/id_edit_buttom_masaike1" android:layout_marginLeft="20dp" android:layout_marginRight="20dp" android:checked="true" android:drawableTop="@drawable/xml_radiobutton_masaike_img1" style="@style/MyEditImgRadioBtStyleOneDp"/>
+                    <RadioButton android:id="@+id/id_edit_buttom_masaike2" android:layout_marginLeft="20dp" android:layout_marginRight="20dp" android:drawableTop="@drawable/xml_radiobutton_masaike_img1" style="@style/MyEditImgRadioBtStyleOneDp"/>
+                    <RadioButton android:id="@+id/id_edit_buttom_masaike3" android:layout_marginLeft="20dp" android:layout_marginRight="20dp" android:drawableTop="@drawable/xml_radiobutton_masaike_img1" style="@style/MyEditImgRadioBtStyleOneDp"/>
+                    <RadioButton android:id="@+id/id_edit_buttom_masaike4" android:layout_marginLeft="20dp" android:layout_marginRight="20dp" android:drawableTop="@drawable/xml_radiobutton_masaike_img1" style="@style/MyEditImgRadioBtStyleOneDp"/>
+                    <RadioButton android:id="@+id/id_edit_buttom_masaike5" android:layout_marginLeft="20dp" android:layout_marginRight="20dp" android:drawableTop="@drawable/xml_radiobutton_masaike_img1" style="@style/MyEditImgRadioBtStyleOneDp"/>
+                    <RadioButton android:id="@+id/id_edit_buttom_masaike6" android:layout_marginLeft="20dp" android:layout_marginRight="20dp" android:drawableTop="@drawable/xml_radiobutton_masaike_img1" style="@style/MyEditImgRadioBtStyleOneDp"/>
+                    <RadioButton android:id="@+id/id_edit_buttom_masaike7" android:layout_marginLeft="20dp" android:layout_marginRight="20dp" android:drawableTop="@drawable/xml_radiobutton_masaike_img1" style="@style/MyEditImgRadioBtStyleOneDp"/>
+                </RadioGroup>
+            </HorizontalScrollView>
+            <LinearLayout android:layout_gravity="center_horizontal" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <LinearLayout android:layout_gravity="center_vertical" android:id="@+id/id_edit_buttom_masaike_linear_mosaic1" android:padding="20dp" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <ImageView android:layout_gravity="center_vertical" android:id="@+id/id_edit_buttom_masaike_mosaic1" android:background="@drawable/edit_photo_black_round_bg" android:layout_width="7dp" android:layout_height="7dp"/>
+                </LinearLayout>
+                <LinearLayout android:layout_gravity="center_vertical" android:id="@+id/id_edit_buttom_masaike_linear_mosaic2" android:padding="20dp" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <ImageView android:layout_gravity="center_vertical" android:id="@+id/id_edit_buttom_masaike_mosaic2" android:background="@drawable/edit_photo_gray_round_bg" android:layout_width="10dp" android:layout_height="10dp"/>
+                </LinearLayout>
+                <LinearLayout android:layout_gravity="center_vertical" android:id="@+id/id_edit_buttom_masaike_linear_mosaic3" android:padding="20dp" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <ImageView android:layout_gravity="center_vertical" android:id="@+id/id_edit_buttom_masaike_mosaic3" android:background="@drawable/edit_photo_gray_round_bg" android:layout_width="14dp" android:layout_height="14dp"/>
+                </LinearLayout>
+                <LinearLayout android:layout_gravity="center_vertical" android:id="@+id/id_edit_buttom_masaike_linear_mosaic4" android:padding="20dp" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <ImageView android:layout_gravity="center_vertical" android:id="@+id/id_edit_buttom_masaike_mosaic4" android:background="@drawable/edit_photo_gray_round_bg" android:layout_width="20dp" android:layout_height="20dp"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="40dp" android:layout_alignParentBottom="true">
+        <View android:background="@color/ed" android:layout_width="match_parent" android:layout_height="1dp"/>
+        <RelativeLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="39dp">
+            <ImageView android:layout_gravity="left|center_vertical|center_horizontal|center" android:id="@+id/act_edit_buttom_masaike_dismiss" android:padding="12dp" android:layout_width="40dp" android:layout_height="40dp" android:layout_marginLeft="19dp" android:src="@mipmap/ic_edit_cha" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" android:layout_marginStart="19dp" android:layout_alignParentStart="true"/>
+            <LinearLayout android:orientation="horizontal" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="39dp" android:layout_centerInParent="true">
+                <TextView android:textSize="15dp" android:textColor="@color/color_black55" android:gravity="center" android:layout_width="110dp" android:layout_height="39dp" android:text="@string/file_edit_mosaic"/>
+            </LinearLayout>
+            <ImageView android:layout_gravity="right|center_vertical|center_horizontal|center" android:id="@+id/act_edit_buttom_masaike_ok" android:padding="10dp" android:layout_width="40dp" android:layout_height="40dp" android:layout_marginRight="20dp" android:src="@mipmap/ic_edit_over" android:layout_alignParentRight="true"/>
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:orientation="vertical" android:id="@+id/wireless_charging_dialog_content_ll" android:background="@drawable/free_dialog_bg" android:layout_width="300dp" android:layout_height="196dp" android:layout_centerInParent="true">
+        <TextView android:textSize="18sp" android:textStyle="bold" android:textColor="@color/color_black55" android:layout_gravity="center_horizontal" android:id="@+id/wireless_charging_support_title_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="14dp" android:layout_marginBottom="14dp" android:text="@string/wireless_charging" android:layout_centerHorizontal="true"/>
+        <View android:id="@+id/line0" android:background="@color/color_black3" android:layout_width="match_parent" android:layout_height="2px" android:layout_marginTop="20dp" android:layout_above="@+id/wireless_charging_support_message_slv"/>
+        <ScrollView android:id="@+id/wireless_charging_support_message_slv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="18dp" android:layout_marginTop="8dp" android:layout_marginRight="18dp" android:layout_above="@+id/line1" android:layout_below="@+id/wireless_charging_support_title_tv">
+            <TextView android:textSize="14sp" android:textColor="@color/color_black55" android:id="@+id/wireless_charging_support_message_tv" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/the_phone_is_or_not_support_wireless_charging"/>
+        </ScrollView>
+        <View android:id="@+id/line1" android:background="@color/color_black3" android:layout_width="match_parent" android:layout_height="2px" android:layout_marginTop="20dp" android:layout_above="@+id/tn_pre"/>
+        <LinearLayout android:orientation="horizontal" android:id="@+id/tn_pre" android:layout_width="match_parent" android:layout_height="50dp" android:layout_alignParentBottom="true">
+            <Button android:textSize="16dp" android:textColor="@color/color_wireless_charge" android:gravity="center" android:id="@+id/wireless_charging_support_no_btn" android:background="@null" android:visibility="visible" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/wireless_charging_dialog_no" android:singleLine="true" android:layout_weight="1" android:textAllCaps="false"/>
+            <View android:background="@color/color_black3" android:layout_width="2px" android:layout_height="match_parent"/>
+            <Button android:textSize="16dp" android:textColor="@color/color_wireless_charge" android:gravity="center" android:id="@+id/wireless_charging_support_yes_btn" android:background="@null" android:visibility="visible" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/wireless_charging_dialog_yes" android:singleLine="true" android:layout_weight="1" android:textAllCaps="false"/>
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

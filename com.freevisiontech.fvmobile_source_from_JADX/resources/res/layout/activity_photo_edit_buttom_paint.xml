@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:id="@+id/act_edit_buttom_paint_layout" android:background="@color/white" android:visibility="gone" android:layout_width="match_parent" android:layout_height="167dp" android:layout_alignParentBottom="true">
+    <RelativeLayout android:gravity="center_vertical" android:orientation="vertical" android:visibility="visible" android:layout_width="match_parent" android:layout_height="127dp">
+        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+            <HorizontalScrollView android:visibility="gone" android:scrollbars="none" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <RadioGroup android:gravity="center_vertical" android:orientation="horizontal" android:padding="25dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+                    <ImageView android:background="@drawable/xml_radiobutton_paint_img1" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:layout_marginRight="20dp"/>
+                    <ImageView android:id="@+id/act_edit_buttom_paint_color1" android:background="@drawable/edit_photo_paint_round_bg_f2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:layout_marginRight="20dp"/>
+                    <ImageView android:id="@+id/act_edit_buttom_paint_color2" android:background="@drawable/edit_photo_paint_round_bg_9e" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:layout_marginRight="20dp"/>
+                    <ImageView android:id="@+id/act_edit_buttom_paint_color3" android:background="@drawable/edit_photo_paint_round_bg_b7" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:layout_marginRight="20dp"/>
+                    <ImageView android:id="@+id/act_edit_buttom_paint_color4" android:background="@drawable/edit_photo_paint_round_bg_c7" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:layout_marginRight="20dp"/>
+                    <ImageView android:id="@+id/act_edit_buttom_paint_color5" android:background="@drawable/edit_photo_paint_round_bg_f0" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:layout_marginRight="20dp"/>
+                    <ImageView android:id="@+id/act_edit_buttom_paint_color6" android:background="@drawable/edit_photo_paint_round_bg_fb" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:layout_marginRight="20dp"/>
+                    <ImageView android:id="@+id/act_edit_buttom_paint_color7" android:background="@drawable/edit_photo_paint_round_bg_g25" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:layout_marginRight="20dp"/>
+                </RadioGroup>
+            </HorizontalScrollView>
+            <android.support.p003v7.widget.RecyclerView android:id="@+id/act_edit_buttom_paint_recycler" android:scrollbars="none" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        </LinearLayout>
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="40dp" android:layout_alignParentBottom="true">
+        <View android:background="@color/ed" android:layout_width="match_parent" android:layout_height="1dp"/>
+        <RelativeLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="39dp">
+            <ImageView android:layout_gravity="left|center_vertical|center_horizontal|center" android:id="@+id/act_edit_buttom_paint_dismiss" android:padding="12dp" android:layout_width="40dp" android:layout_height="40dp" android:layout_marginLeft="19dp" android:src="@mipmap/ic_edit_cha" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" android:layout_marginStart="19dp" android:layout_alignParentStart="true"/>
+            <LinearLayout android:orientation="horizontal" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="39dp" android:layout_centerInParent="true">
+                <TextView android:textSize="15dp" android:textColor="@color/color_black55" android:gravity="center" android:layout_width="110dp" android:layout_height="39dp" android:text="@string/file_edit_paint"/>
+            </LinearLayout>
+            <ImageView android:layout_gravity="right|center_vertical|center_horizontal|center" android:id="@+id/act_edit_buttom_paint_ok" android:padding="10dp" android:layout_width="40dp" android:layout_height="40dp" android:layout_marginRight="20dp" android:src="@mipmap/ic_edit_over" android:layout_alignParentRight="true"/>
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

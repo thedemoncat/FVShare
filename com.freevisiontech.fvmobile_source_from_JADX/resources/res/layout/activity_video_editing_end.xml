@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@color/f6" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include android:id="@+id/top_title" layout="@layout/layout_file_title"/>
+    <RelativeLayout android:layout_gravity="center_horizontal" android:layout_width="267dp" android:layout_height="150dp" android:layout_marginTop="@dimen/text_size18">
+        <com.makeramen.roundedimageview.RoundedImageView android:id="@+id/act_video_editing_end_image" android:layout_width="267dp" android:layout_height="150dp" app:riv_corner_radius_top_left="10dp" app:riv_corner_radius_top_right="10dp" app:riv_corner_radius_bottom_left="10dp" app:riv_corner_radius_bottom_right="10dp"/>
+        <ImageView android:id="@+id/act_video_editing_end_to_play_video" android:background="@mipmap/ic_video_editing_end_play" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true"/>
+    </RelativeLayout>
+    <LinearLayout android:layout_gravity="center_horizontal" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="18dp">
+        <ImageView android:background="@mipmap/ic_video_editing_end_ok" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <TextView android:textSize="@dimen/text_size15" android:textColor="@color/color_black55" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/text_size12" android:text="@string/file_video_have_been_saved"/>
+    </LinearLayout>
+</LinearLayout>

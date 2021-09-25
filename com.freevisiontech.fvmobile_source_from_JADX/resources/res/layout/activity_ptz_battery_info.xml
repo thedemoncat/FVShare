@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include android:id="@+id/top_title" layout="@layout/layout_title"/>
+    <ScrollView android:id="@+id/scrollview" android:visibility="visible" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="25dp" android:layout_marginTop="19dp" android:layout_marginRight="25dp">
+                <TextView android:textSize="16dp" android:textColor="@color/color_light_gray2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/label_design_capacity"/>
+                <TextView android:textSize="16dp" android:textColor="@color/color_black1" android:id="@+id/text_design_capacity" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp"/>
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="25dp" android:layout_marginTop="19dp" android:layout_marginRight="25dp">
+                <TextView android:textSize="16dp" android:textColor="@color/color_light_gray2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/label_current_capacity"/>
+                <TextView android:textSize="16dp" android:textColor="@color/color_black1" android:id="@+id/text_current_capacity" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp"/>
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="25dp" android:layout_marginTop="19dp" android:layout_marginRight="25dp">
+                <TextView android:textSize="16dp" android:textColor="@color/color_light_gray2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/label_charge_percentage"/>
+                <TextView android:textSize="16dp" android:textColor="@color/color_black1" android:id="@+id/text_charge_percentage" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp"/>
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="25dp" android:layout_marginTop="38dp" android:layout_marginRight="25dp">
+                <TextView android:textSize="16dp" android:textColor="@color/color_light_gray2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/label_number_of_discharges"/>
+                <TextView android:textSize="16dp" android:textColor="@color/color_black1" android:id="@+id/text_num_discharges" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp"/>
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="25dp" android:layout_marginTop="19dp" android:layout_marginRight="25dp">
+                <TextView android:textSize="16dp" android:textColor="@color/color_light_gray2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/label_percentage_of_life"/>
+                <TextView android:textSize="16dp" android:textColor="@color/color_black1" android:id="@+id/text_life_percentage" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp"/>
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="25dp" android:layout_marginTop="38dp" android:layout_marginRight="25dp">
+                <TextView android:textSize="16dp" android:textColor="@color/color_light_gray2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/label_battery_temperature"/>
+                <TextView android:textSize="16dp" android:textColor="@color/color_black1" android:id="@+id/text_temperature" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp"/>
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="25dp" android:layout_marginTop="19dp" android:layout_marginRight="25dp">
+                <TextView android:textSize="16dp" android:textColor="@color/color_light_gray2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/label_electric_current"/>
+                <TextView android:textSize="16dp" android:textColor="@color/color_black1" android:id="@+id/text_electric_current" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp"/>
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="25dp" android:layout_marginTop="19dp" android:layout_marginRight="25dp" android:layout_marginBottom="19dp">
+                <TextView android:textSize="16dp" android:textColor="@color/color_light_gray2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/label_voltage"/>
+                <TextView android:textSize="16dp" android:textColor="@color/color_black1" android:id="@+id/text_voltage" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

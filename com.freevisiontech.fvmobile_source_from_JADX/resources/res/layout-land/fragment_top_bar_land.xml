@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@color/color_white" android:layout_width="50dp" android:layout_height="match_parent">
+    <ImageView android:id="@+id/btn_back" android:background="@null" android:layout_width="match_parent" android:layout_height="0dp" android:src="@mipmap/ic_home_back" android:scaleType="centerInside" android:layout_weight="1"/>
+    <RelativeLayout android:id="@+id/rl_camera" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+        <ImageView android:id="@+id/btn_camera" android:background="@null" android:layout_width="wrap_content" android:layout_height="match_parent" android:src="@mipmap/ic_camera" android:scaleType="centerInside" android:layout_centerHorizontal="true" android:layout_centerVertical="true"/>
+        <ImageView android:id="@+id/btn_camera_status" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="4dp" android:src="@mipmap/ic_back" android:layout_toLeftOf="@+id/btn_camera" android:layout_centerVertical="true"/>
+    </RelativeLayout>
+    <RelativeLayout android:id="@+id/rl_vilta" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+        <ImageView android:id="@+id/btn_vilta" android:background="@null" android:layout_width="wrap_content" android:layout_height="match_parent" android:src="@mipmap/ic_mobile_vilta" android:scaleType="centerInside" android:layout_centerHorizontal="true" android:layout_centerVertical="true"/>
+        <ImageView android:id="@+id/btn_vilta_status" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="4dp" android:src="@mipmap/ic_back" android:layout_toLeftOf="@+id/btn_vilta" android:layout_centerVertical="true"/>
+    </RelativeLayout>
+    <ImageView android:id="@+id/btn_setting" android:layout_width="match_parent" android:layout_height="0dp" android:src="@mipmap/ic_setting" android:scaleType="centerInside" android:layout_weight="1"/>
+</LinearLayout>

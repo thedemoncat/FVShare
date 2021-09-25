@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="@color/f6" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include android:id="@+id/top_title" layout="@layout/layout_title"/>
+    <com.github.barteksc.pdfviewer.PDFView android:id="@+id/pdfView" android:background="@color/f6" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/top_title"/>
+    <TextView android:textSize="@dimen/text_size14" android:textColor="@color/color_black4" android:gravity="center" android:id="@+id/tv_page" android:background="@drawable/sp_e5edf3_round20_bg" android:visibility="gone" android:layout_width="70dp" android:layout_height="35dp" android:layout_marginLeft="15dp" android:layout_marginTop="60dp"/>
+</RelativeLayout>

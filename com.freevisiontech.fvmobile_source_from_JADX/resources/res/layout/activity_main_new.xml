@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="match_parent">
+    <FrameLayout android:id="@+id/fragment_main_A" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginBottom="49.5dp" android:layout_alignParentBottom="true"/>
+    <View android:background="@color/gray_line" android:layout_width="match_parent" android:layout_height="0.5dp"/>
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="49dp" android:layout_alignParentBottom="true">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/activity_title_main_button" android:background="@color/color_white" android:layout_width="match_parent" android:layout_height="49dp">
+            <RelativeLayout android:id="@+id/tab1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1">
+                <ImageView android:id="@+id/main_image1" android:layout_width="25dp" android:layout_height="25dp" android:src="@mipmap/yuntai2" android:layout_centerHorizontal="true"/>
+                <TextView android:textSize="9dp" android:textColor="@color/main_color" android:id="@+id/main_text1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/home_fragment_bottom_yuntai" android:layout_below="@+id/main_image1" android:layout_centerHorizontal="true"/>
+            </RelativeLayout>
+            <RelativeLayout android:id="@+id/tab2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1">
+                <ImageView android:id="@+id/main_image2" android:layout_width="25dp" android:layout_height="25dp" android:src="@mipmap/wenjian2" android:layout_centerHorizontal="true"/>
+                <TextView android:textSize="9dp" android:textColor="@color/text102" android:id="@+id/main_text2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/home_fragment_bottom_file" android:layout_below="@+id/main_image2" android:layout_centerHorizontal="true"/>
+            </RelativeLayout>
+            <RelativeLayout android:id="@+id/tab3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1">
+                <ImageView android:id="@+id/main_image3" android:layout_width="25dp" android:layout_height="25dp" android:src="@mipmap/shezhi2" android:layout_centerHorizontal="true"/>
+                <TextView android:textSize="9dp" android:textColor="@color/text102" android:id="@+id/main_text3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/about" android:layout_below="@+id/main_image3" android:layout_centerHorizontal="true"/>
+            </RelativeLayout>
+        </LinearLayout>
+        <RelativeLayout android:id="@+id/main_share_delete" android:background="@color/color_white" android:visibility="gone" android:layout_width="match_parent" android:layout_height="49dp" android:layout_alignParentBottom="true">
+            <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true">
+                <ImageView android:id="@+id/text_main_share" android:background="@drawable/file_share_button_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="25dp"/>
+                <ImageView android:id="@+id/text_main_baocun" android:background="@drawable/file_baocun_button_selector" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="30dp"/>
+            </LinearLayout>
+            <ImageView android:id="@+id/text_main_delete" android:background="@drawable/file_delete_button_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="30dp" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+        </RelativeLayout>
+    </RelativeLayout>
+    <RelativeLayout android:id="@+id/rl_gif_image_view" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+        <ImageView android:id="@+id/iv_left_right_sliding_effect" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@mipmap/ic_left_right_sliding_effect" android:scaleType="centerCrop"/>
+        <ImageView android:id="@+id/iv_gif_image_view_close" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="108dp" android:src="@mipmap/ic_i_konw" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true"/>
+    </RelativeLayout>
+</RelativeLayout>

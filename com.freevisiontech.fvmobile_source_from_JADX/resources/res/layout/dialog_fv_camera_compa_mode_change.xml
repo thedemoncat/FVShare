@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center" android:background="@drawable/dialog_fv_camera_mode_change_round_bg5" android:layout_width="312dp" android:layout_height="144dp">
+    <RelativeLayout android:gravity="center" android:background="@drawable/dialog_fv_camera_mode_change_round_bg5" android:layout_width="312dp" android:layout_height="144dp" android:layout_centerInParent="true">
+        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true">
+            <TextView android:textSize="@dimen/text_size18" android:textStyle="bold" android:textColor="@color/color_black55" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="30dp" android:text="@string/label_camera_mode_change_dialog_title"/>
+            <TextView android:textSize="@dimen/text_size15" android:textColor="@color/color_black55" android:gravity="center" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:text="@string/label_camera_mode_change_dialog_body"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@+id/dialog_fvkcf_free_linear" android:background="@drawable/dialog_fv_camera_mode_change_round_bg5" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+            <View android:background="@color/color_black3" android:layout_width="match_parent" android:layout_height="1dp"/>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="@dimen/text_size16" android:textColor="@color/c55" android:gravity="center" android:id="@+id/dialog_fvkcf_free_reset" android:padding="10dp" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginRight="10dp" android:text="@string/text_button_cancel" android:layout_weight="1"/>
+                <View android:background="@color/color_black3" android:layout_width="1dp" android:layout_height="match_parent"/>
+                <TextView android:textSize="@dimen/text_size16" android:textColor="@color/color_black55" android:gravity="center" android:id="@+id/dialog_fvkcf_free_sure" android:padding="10dp" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/label_sure" android:layout_weight="1"/>
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

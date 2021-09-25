@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@color/f6" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginBottom="167dp" android:layout_centerHorizontal="true">
+            <LinearLayout android:orientation="vertical" android:id="@+id/act_photo_edit_imageview_linear" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_centerInParent="true">
+                <com.freevisiontech.fvmobile.widget.mosaic.MosaicView android:id="@+id/act_photo_edit_mosaic_imageview" android:layout_width="match_parent" android:layout_height="match_parent"/>
+            </LinearLayout>
+        </RelativeLayout>
+        <include layout="@layout/activity_photo_edit_buttom_masaike"/>
+    </RelativeLayout>
+    <TextView android:id="@+id/act_photo_edit_jiazai" android:background="@mipmap/ic_image_loading" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true"/>
+</RelativeLayout>

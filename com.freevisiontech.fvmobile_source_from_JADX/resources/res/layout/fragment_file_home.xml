@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+        <include android:id="@+id/top_title" layout="@layout/layout_file_title"/>
+        <include layout="@layout/layout_file_title_photo_video"/>
+        <android.support.p001v4.view.ViewPager android:id="@+id/file_view_pager" android:layout_width="match_parent" android:layout_height="1dp" android:layout_weight="1"/>
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:id="@+id/file_paint_home_to_activity" android:background="@drawable/file_paint_bg" android:visibility="gone" android:layout_width="45dp" android:layout_height="45dp" android:layout_marginBottom="45dp" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true">
+        <ImageView android:background="@drawable/ic_bianji" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    </LinearLayout>
+</RelativeLayout>

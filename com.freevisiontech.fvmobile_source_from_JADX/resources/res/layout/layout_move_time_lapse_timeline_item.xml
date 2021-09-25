@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_gravity="center" android:orientation="vertical" android:layout_width="220dp" android:layout_height="wrap_content">
+    <View android:id="@+id/line" android:background="@color/color_black3" android:layout_width="1dp" android:layout_height="135dp" android:layout_marginStart="18dp"/>
+    <View android:id="@+id/lineShadow" android:background="@color/color_white" android:visibility="visible" android:layout_width="1dp" android:layout_height="8dp" android:layout_marginStart="18dp"/>
+    <LinearLayout android:orientation="horizontal" android:id="@+id/ll_timeline" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="8dp" android:layout_marginStart="15dp">
+        <ImageView android:layout_gravity="center_vertical" android:background="@drawable/sp_round2_black4" android:layout_width="7dp" android:layout_height="7dp"/>
+        <TextView android:textSize="@dimen/text_size15" android:textColor="@color/color_black4" android:id="@+id/tv_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="00:55:00" android:layout_marginStart="22dp"/>
+    </LinearLayout>
+    <com.makeramen.roundedimageview.RoundedImageView android:id="@+id/icon" android:layout_width="142dp" android:layout_height="80dp" android:layout_marginBottom="25dp" android:scaleType="centerCrop" android:layout_below="@+id/ll_timeline" android:layout_marginStart="44dp" app:riv_corner_radius_top_left="5dp" app:riv_corner_radius_top_right="5dp" app:riv_corner_radius_bottom_left="5dp" app:riv_corner_radius_bottom_right="5dp"/>
+</RelativeLayout>

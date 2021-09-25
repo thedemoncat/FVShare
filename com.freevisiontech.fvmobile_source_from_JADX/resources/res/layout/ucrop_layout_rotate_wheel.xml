@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+    <TextView android:id="@+id/text_view_rotate" android:visibility="gone" android:text="100°" style="@style/ucrop_TextViewWidgetText"/>
+    <com.yalantis.ucrop.view.widget.HorizontalProgressWheelView android:id="@+id/rotate_scroll_wheel" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_toLeftOf="@+id/wrapper_rotate_by_angle" android:layout_toRightOf="@+id/wrapper_reset_rotate" android:layout_below="@+id/text_view_rotate" android:layout_toStartOf="@+id/wrapper_rotate_by_angle" android:layout_toEndOf="@+id/wrapper_reset_rotate"/>
+    <FrameLayout android:id="@+id/wrapper_reset_rotate" android:background="?attr/selectableItemBackgroundBorderless" android:clickable="true" android:layout_width="wrap_content" android:layout_height="@dimen/ucrop_size_wrapper_rotate_button" android:layout_marginLeft="30dp" android:layout_centerVertical="true">
+        <TextView android:textColor="@color/ucrop_color_crop_background" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ucrop_angle_reduction"/>
+    </FrameLayout>
+    <FrameLayout android:id="@+id/wrapper_rotate_by_left_angle" android:background="?attr/selectableItemBackgroundBorderless" android:clickable="true" android:layout_width="@dimen/ucrop_size_wrapper_rotate_button" android:layout_height="@dimen/ucrop_size_wrapper_rotate_button" android:layout_marginRight="70dp" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:layout_alignParentEnd="true">
+        <ImageView android:layout_gravity="center" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ucrop_ic_left" android:scaleType="fitCenter"/>
+    </FrameLayout>
+    <FrameLayout android:id="@+id/wrapper_rotate_by_angle" android:background="?attr/selectableItemBackgroundBorderless" android:clickable="true" android:layout_width="@dimen/ucrop_size_wrapper_rotate_button" android:layout_height="@dimen/ucrop_size_wrapper_rotate_button" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:layout_alignParentEnd="true">
+        <ImageView android:layout_gravity="center" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ucrop_ic_angle" android:scaleType="fitCenter"/>
+    </FrameLayout>
+</RelativeLayout>

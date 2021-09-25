@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:id="@+id/act_edit_buttom_tiaojie_layout" android:background="@color/white" android:visibility="gone" android:layout_width="match_parent" android:layout_height="167dp" android:layout_alignParentBottom="true">
+    <RelativeLayout android:gravity="center_vertical" android:orientation="vertical" android:visibility="visible" android:layout_width="match_parent" android:layout_height="127dp">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_centerInParent="true">
+            <RadioGroup android:gravity="center_vertical" android:layout_gravity="center_horizontal" android:orientation="horizontal" android:padding="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+                <RadioButton android:gravity="bottom" android:id="@+id/id_edit_buttom_tiaojie_duibi" android:layout_marginLeft="20dp" android:layout_marginRight="20dp" android:checked="true" android:text="@string/file_edit_contrast" android:drawableTop="@drawable/xml_radiobutton_tiaojie_img1" style="@style/MyEditImgRadioBtStyle"/>
+                <RadioButton android:gravity="bottom" android:id="@+id/id_edit_buttom_tiaojie_liang" android:layout_marginLeft="20dp" android:layout_marginRight="20dp" android:text="@string/file_edit_visibility" android:drawableTop="@drawable/xml_radiobutton_tiaojie_img2" style="@style/MyEditImgRadioBtStyle"/>
+                <RadioButton android:gravity="bottom" android:id="@+id/id_edit_buttom_tiaojie_bao" android:layout_marginLeft="20dp" android:layout_marginRight="20dp" android:text="@string/file_edit_saturation" android:drawableTop="@drawable/xml_radiobutton_tiaojie_img3" style="@style/MyEditImgRadioBtStyle"/>
+            </RadioGroup>
+        </LinearLayout>
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="40dp" android:layout_alignParentBottom="true">
+        <View android:background="@color/ed" android:layout_width="match_parent" android:layout_height="1dp"/>
+        <RelativeLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="39dp">
+            <ImageView android:layout_gravity="left|center_vertical|center_horizontal|center" android:id="@+id/act_edit_buttom_tiaojie_dismiss" android:padding="12dp" android:layout_width="40dp" android:layout_height="40dp" android:layout_marginLeft="19dp" android:src="@mipmap/ic_edit_cha" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" android:layout_marginStart="19dp" android:layout_alignParentStart="true"/>
+            <LinearLayout android:orientation="horizontal" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="39dp" android:layout_centerInParent="true">
+                <TextView android:textSize="15dp" android:textColor="@color/color_black55" android:gravity="center" android:layout_width="110dp" android:layout_height="39dp" android:text="@string/file_edit_adjust_the"/>
+            </LinearLayout>
+            <ImageView android:layout_gravity="right|center_vertical|center_horizontal|center" android:id="@+id/act_edit_buttom_tiaojie_ok" android:padding="10dp" android:layout_width="40dp" android:layout_height="40dp" android:layout_marginRight="20dp" android:src="@mipmap/ic_edit_over" android:layout_alignParentRight="true"/>
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

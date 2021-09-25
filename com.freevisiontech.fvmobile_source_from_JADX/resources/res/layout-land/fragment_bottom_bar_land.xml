@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="@color/color_white" android:layout_width="wrap_content" android:layout_height="match_parent">
+    <RelativeLayout android:id="@+id/top_layout" android:layout_width="50dp" android:layout_height="match_parent" android:layout_toRightOf="@+id/ll_layout">
+        <TextView android:textSize="@dimen/text_size15" android:textColor="@color/color_black1" android:gravity="center" android:id="@+id/btn_photo_mode" android:layout_width="22dp" android:layout_height="39dp" android:text="@string/label_photo" android:layout_centerInParent="true"/>
+        <View android:gravity="center" android:id="@+id/line" android:background="@color/color_black2" android:layout_width="15dp" android:layout_height="1dp" android:layout_marginTop="16dp" android:layout_marginBottom="16dp" android:layout_below="@+id/btn_photo_mode" android:layout_centerHorizontal="true" android:layout_centerVertical="true"/>
+        <TextView android:textSize="@dimen/text_size12" android:textColor="@color/color_black03" android:gravity="center" android:id="@+id/btn_video_mode" android:layout_width="22dp" android:layout_height="39dp" android:text="@string/label_video" android:layout_below="@+id/line" android:layout_centerHorizontal="true" android:layout_centerVertical="true"/>
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:id="@+id/ll_layout" android:layout_width="42dp" android:layout_height="match_parent" android:layout_marginLeft="11dp">
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+            <ImageView android:layout_gravity="center" android:id="@+id/btn_flash_switch" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@mipmap/ic_flash_auto" android:scaleType="centerInside" android:layout_centerInParent="true"/>
+        </RelativeLayout>
+        <ImageView android:layout_gravity="center" android:id="@+id/btn_lens_switch" android:layout_width="match_parent" android:layout_height="0dp" android:src="@mipmap/ic_lens_switch" android:scaleType="centerInside" android:layout_weight="1"/>
+        <ImageView android:layout_gravity="center" android:id="@+id/btn_photo_video" android:layout_width="wrap_content" android:layout_height="0dp" android:src="@mipmap/ic_photo" android:layout_weight="1"/>
+        <ImageView android:layout_gravity="center" android:id="@+id/btn_follow" android:layout_width="match_parent" android:layout_height="0dp" android:src="@mipmap/ic_follow" android:scaleType="centerInside" android:layout_weight="1"/>
+        <ImageView android:layout_gravity="center" android:id="@+id/btn_icon_show" android:layout_width="wrap_content" android:layout_height="0dp" android:src="@mipmap/ic_launcher" android:layout_weight="1"/>
+    </LinearLayout>
+</RelativeLayout>

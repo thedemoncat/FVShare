@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@color/f6" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginBottom="167dp" android:layout_centerHorizontal="true">
+            <LinearLayout android:orientation="vertical" android:id="@+id/act_photo_edit_imageview_linear" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_centerInParent="true">
+                <p008jp.p009co.cyberagent.android.gpuimage.GPUImageView android:id="@+id/act_photo_edit_imageview" android:background="@color/transparent" android:layout_width="match_parent" android:layout_height="match_parent"/>
+            </LinearLayout>
+        </RelativeLayout>
+        <RelativeLayout android:background="@color/color_white_40" android:layout_width="match_parent" android:layout_height="50dp" android:layout_marginBottom="167dp" android:layout_alignParentBottom="true">
+            <LinearLayout android:layout_gravity="center_horizontal" android:orientation="horizontal" android:id="@+id/edit_tiaojie_seekbar_ll_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+                <TextView android:textSize="@dimen/text_size14" android:textColor="@color/color_black55" android:layout_gravity="center_vertical" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/file_edit_intensity_adjusting"/>
+                <SeekBar android:layout_gravity="center_vertical" android:id="@+id/edit_tiaojie_seekbar" android:paddingLeft="15dp" android:paddingRight="15dp" android:layout_width="200dp" android:layout_height="20dp" android:maxHeight="2dp" android:progressDrawable="@drawable/seekbar_style_black4" android:minHeight="2dp" android:thumb="@mipmap/ic_seekbar_thumb"/>
+            </LinearLayout>
+            <TextView android:textSize="@dimen/text_size13" android:textColor="@color/c5" android:id="@+id/edit_tiaojie_seekbar_bili" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="25%" android:layout_toRightOf="@+id/edit_tiaojie_seekbar_ll_layout" android:layout_centerVertical="true"/>
+        </RelativeLayout>
+        <include layout="@layout/activity_photo_edit_buttom_tiaojie"/>
+    </RelativeLayout>
+    <TextView android:id="@+id/act_photo_edit_jiazai" android:background="@mipmap/ic_image_loading" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true"/>
+</RelativeLayout>

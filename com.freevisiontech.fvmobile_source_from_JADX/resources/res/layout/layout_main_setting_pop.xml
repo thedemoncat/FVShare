@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:orientation="vertical" android:background="@drawable/main_topbar_pop" android:layout_width="345dp" android:layout_height="220dp">
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="45dp">
+        <ImageView android:id="@+id/btn_back" android:paddingLeft="15dp" android:paddingRight="15dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="match_parent" android:src="@mipmap/ic_back" android:scaleType="centerInside" android:layout_centerVertical="true"/>
+        <TextView android:textSize="@dimen/text_size15" android:textColor="@color/color_light_gray" android:gravity="center" android:id="@+id/title" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="@string/home_fragment_bottom_yuntai" android:layout_centerHorizontal="true"/>
+    </RelativeLayout>
+    <View android:id="@+id/line" android:background="@color/color_black3" android:layout_width="match_parent" android:layout_height="1dp" android:layout_alignParentBottom="true"/>
+    <LinearLayout android:orientation="vertical" android:id="@+id/ll_ptz" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:orientation="horizontal" android:id="@+id/rl_contextual_model" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/text_size15" android:textColor="@color/color_black4" android:gravity="center" android:id="@+id/contextual_model" android:layout_width="wrap_content" android:layout_height="45dp" android:layout_marginLeft="15dp" android:text="@string/contextual_model"/>
+            <ImageView android:id="@+id/img_arrow_or_select" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15dp" android:src="@mipmap/ic_right" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+        </RelativeLayout>
+        <View android:background="@color/color_black3" android:layout_width="match_parent" android:layout_height="1dp" android:layout_alignParentBottom="true"/>
+        <RelativeLayout android:orientation="horizontal" android:id="@+id/rl_pitch_axis_lock" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/text_size15" android:textColor="@color/color_black4" android:gravity="center" android:id="@+id/pitch_axis_lock" android:layout_width="wrap_content" android:layout_height="45dp" android:layout_marginLeft="15dp" android:text="@string/follow_model"/>
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15dp" android:src="@mipmap/ic_right" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+        </RelativeLayout>
+        <View android:background="@color/color_black3" android:layout_width="match_parent" android:layout_height="1dp" android:layout_alignParentBottom="true"/>
+    </LinearLayout>
+    <ScrollView android:id="@+id/ll_contextual_model" android:visibility="visible" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+            <RelativeLayout android:id="@+id/rl_contextual_mode" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <RelativeLayout android:id="@+id/rl_walk_model" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="@dimen/text_size15" android:textColor="@color/color_black4" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="45dp" android:layout_marginLeft="@dimen/text_size15" android:layout_marginRight="@dimen/text_size15" android:text="@string/walk_mode" android:layout_alignParentLeft="true"/>
+                    <ImageView android:id="@+id/iv_walk_select" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/text_size15" android:layout_marginRight="@dimen/text_size15" android:src="@mipmap/ic_select" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+                    <View android:background="@color/color_black3" android:layout_width="match_parent" android:layout_height="1dp" android:layout_alignParentBottom="true"/>
+                </RelativeLayout>
+                <RelativeLayout android:id="@+id/rl_sport_model" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/rl_walk_model">
+                    <TextView android:textSize="@dimen/text_size15" android:textColor="@color/color_black4" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="45dp" android:layout_marginLeft="@dimen/text_size15" android:layout_marginRight="@dimen/text_size15" android:text="@string/sport_mode" android:layout_alignParentLeft="true"/>
+                    <ImageView android:id="@+id/iv_sport_select" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/text_size15" android:layout_marginRight="@dimen/text_size15" android:src="@mipmap/ic_select" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+                    <View android:background="@color/color_black3" android:layout_width="match_parent" android:layout_height="1dp" android:layout_alignParentBottom="true"/>
+                </RelativeLayout>
+                <RelativeLayout android:id="@+id/rl_custom_model" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/rl_sport_model">
+                    <TextView android:textSize="@dimen/text_size15" android:textColor="@color/color_black4" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="45dp" android:layout_marginLeft="@dimen/text_size15" android:layout_marginRight="@dimen/text_size15" android:text="@string/custom_for_speed" android:layout_alignParentLeft="true"/>
+                    <ImageView android:id="@+id/iv_custom_select" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/text_size15" android:layout_marginRight="@dimen/text_size15" android:src="@mipmap/ic_select" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+                    <View android:background="@color/color_black3" android:layout_width="match_parent" android:layout_height="1dp" android:layout_alignParentBottom="true"/>
+                </RelativeLayout>
+                <RelativeLayout android:id="@+id/rl_custom_isvisible" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/rl_custom_model">
+                    <RelativeLayout android:id="@+id/rl_pitch_spped" android:layout_width="match_parent" android:layout_height="50dp">
+                        <TextView android:textSize="@dimen/text_size15" android:textColor="@color/color_black4" android:gravity="center" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginLeft="40dp" android:text="@string/pitch" android:layout_centerVertical="true"/>
+                        <SeekBar android:id="@+id/seekbar_pitch_speed" android:layout_width="100dp" android:layout_height="wrap_content" android:maxHeight="2dp" android:max="100" android:progressDrawable="@drawable/seekbar_style_black4" android:minHeight="2dp" android:thumb="@mipmap/ic_seekbar_thumb" android:layout_toLeftOf="@+id/tv_pitch_pg_speed" android:layout_centerVertical="true"/>
+                        <TextView android:textSize="@dimen/text_size15" android:textColor="@color/color_light_gray2" android:gravity="center" android:id="@+id/tv_pitch_pg_speed" android:layout_width="45dp" android:layout_height="match_parent" android:text="0" android:layout_alignParentRight="true"/>
+                        <View android:background="@color/color_black3" android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginLeft="40dp" android:layout_alignParentBottom="true"/>
+                    </RelativeLayout>
+                    <RelativeLayout android:id="@+id/rl_yaw_speed" android:layout_width="match_parent" android:layout_height="50dp" android:layout_below="@+id/rl_pitch_spped">
+                        <TextView android:textSize="@dimen/text_size15" android:textColor="@color/color_black4" android:gravity="center" android:layout_width="wrap_content" android:layout_height="40dp" android:layout_marginLeft="40dp" android:text="@string/yaw" android:layout_centerVertical="true"/>
+                        <SeekBar android:id="@+id/seekbar_yaw_speed" android:layout_width="100dp" android:layout_height="wrap_content" android:maxHeight="2dp" android:max="100" android:progressDrawable="@drawable/seekbar_style_black4" android:minHeight="2dp" android:thumb="@mipmap/ic_seekbar_thumb" android:layout_toLeftOf="@+id/tv_yaw_pg_speed" android:layout_centerVertical="true"/>
+                        <TextView android:textSize="@dimen/text_size15" android:textColor="@color/color_light_gray2" android:gravity="center" android:id="@+id/tv_yaw_pg_speed" android:layout_width="45dp" android:layout_height="match_parent" android:text="0" android:layout_alignParentRight="true"/>
+                        <View android:background="@color/color_black3" android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginLeft="40dp" android:layout_alignParentBottom="true"/>
+                    </RelativeLayout>
+                    <RelativeLayout android:visibility="gone" android:layout_width="match_parent" android:layout_height="50dp" android:layout_below="@+id/rl_yaw_speed">
+                        <TextView android:textSize="@dimen/text_size15" android:textColor="@color/color_black4" android:gravity="center" android:layout_width="wrap_content" android:layout_height="40dp" android:layout_marginLeft="40dp" android:text="@string/roll" android:layout_centerVertical="true"/>
+                        <SeekBar android:id="@+id/seekbar_roll_spped" android:layout_width="150dp" android:layout_height="wrap_content" android:maxHeight="2dp" android:max="100" android:progressDrawable="@drawable/seekbar_style_black4" android:minHeight="2dp" android:thumb="@mipmap/ic_seekbar_thumb" android:layout_toLeftOf="@+id/tv_roll_pg_speed" android:layout_centerVertical="true"/>
+                        <TextView android:textSize="@dimen/text_size15" android:textColor="@color/color_light_gray2" android:gravity="center" android:id="@+id/tv_roll_pg_speed" android:layout_width="45dp" android:layout_height="match_parent" android:text="0" android:layout_alignParentRight="true"/>
+                    </RelativeLayout>
+                </RelativeLayout>
+            </RelativeLayout>
+            <RelativeLayout android:id="@+id/rl_follow_mode" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <RelativeLayout android:id="@+id/rl_all_follow_mode" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="@dimen/text_size15" android:textColor="@color/color_black4" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="45dp" android:layout_marginLeft="@dimen/text_size15" android:layout_marginRight="@dimen/text_size15" android:text="@string/all_the_follow_mode" android:layout_alignParentLeft="true"/>
+                    <ImageView android:id="@+id/iv_all_follow_select" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/text_size15" android:layout_marginRight="@dimen/text_size15" android:src="@mipmap/ic_select" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+                    <View android:background="@color/color_black3" android:layout_width="match_parent" android:layout_height="1dp" android:layout_alignParentBottom="true"/>
+                </RelativeLayout>
+                <RelativeLayout android:id="@+id/rl_half_follow_mode" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/rl_all_follow_mode">
+                    <TextView android:textSize="@dimen/text_size15" android:textColor="@color/color_black4" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="45dp" android:layout_marginLeft="@dimen/text_size15" android:layout_marginRight="@dimen/text_size15" android:text="@string/half_follow" android:layout_alignParentLeft="true"/>
+                    <ImageView android:id="@+id/iv_half_follow_select" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/text_size15" android:layout_marginRight="@dimen/text_size15" android:src="@mipmap/ic_select" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+                    <View android:background="@color/color_black3" android:layout_width="match_parent" android:layout_height="1dp" android:layout_alignParentBottom="true"/>
+                </RelativeLayout>
+                <RelativeLayout android:id="@+id/rl_no_follow_mode" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/rl_half_follow_mode">
+                    <TextView android:textSize="@dimen/text_size15" android:textColor="@color/color_black4" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="45dp" android:layout_marginLeft="@dimen/text_size15" android:layout_marginRight="@dimen/text_size15" android:text="@string/no_follow" android:layout_alignParentLeft="true"/>
+                    <ImageView android:id="@+id/iv_no_follow_select" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/text_size15" android:layout_marginRight="@dimen/text_size15" android:src="@mipmap/ic_select" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+                    <View android:background="@color/color_black3" android:layout_width="match_parent" android:layout_height="1dp" android:layout_alignParentBottom="true"/>
+                </RelativeLayout>
+            </RelativeLayout>
+        </RelativeLayout>
+    </ScrollView>
+</LinearLayout>

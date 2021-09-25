@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+        <include android:id="@+id/top_title" layout="@layout/layout_title"/>
+        <ImageView android:id="@+id/iv_logo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="73dp" android:src="@mipmap/logo" android:layout_below="@+id/top_title" android:layout_centerHorizontal="true"/>
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="25dp" android:layout_below="@+id/iv_logo">
+            <TextView android:textSize="@dimen/text_size16" android:textColor="@color/color_black1" android:id="@+id/tv_version" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/app_version" android:layout_centerHorizontal="true"/>
+            <TextView android:textSize="@dimen/text_size16" android:textColor="@color/color_black1" android:id="@+id/tv_app_version" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_toRightOf="@+id/tv_version"/>
+        </LinearLayout>
+        <TextView android:textSize="14dp" android:textColor="@color/color_black7" android:id="@+id/website" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="30dp" android:text="@string/website_homepage" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true"/>
+        <TextView android:textSize="14dp" android:textColor="@color/color_black4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="15dp" android:text="@string/company_name" android:layout_above="@+id/website" android:layout_centerHorizontal="true"/>
+    </RelativeLayout>
+</RelativeLayout>

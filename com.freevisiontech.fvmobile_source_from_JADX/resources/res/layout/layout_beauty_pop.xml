@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="@drawable/sp_white60_round5_bg" android:layout_width="330dp" android:layout_height="81dp" android:layout_marginLeft="15dp" android:layout_marginRight="15dp">
+    <TextView android:textSize="14dp" android:textColor="@color/color_black4" android:gravity="center" android:id="@+id/tv_title" android:layout_width="match_parent" android:layout_height="36dp" android:text="@string/label_beauty_level"/>
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="37dp" android:layout_below="@+id/tv_title">
+        <TextView android:textSize="12dp" android:textColor="@color/color_black4" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/label_nature" android:layout_centerVertical="true" android:paddingStart="5dp" android:paddingEnd="10dp" android:layout_toStartOf="@+id/seekbar"/>
+        <SeekBar android:id="@+id/seekbar" android:layout_width="225dp" android:layout_height="wrap_content" android:maxHeight="2dp" android:progressDrawable="@drawable/seekbar_style_black4" android:minHeight="2dp" android:thumb="@mipmap/ic_seekbar_thumb" android:layout_centerHorizontal="true" android:layout_centerVertical="true"/>
+        <TextView android:textSize="12dp" android:textColor="@color/color_black4" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/label_white_skinned" android:layout_centerVertical="true" android:paddingStart="5dp" android:paddingEnd="10dp" android:layout_toEndOf="@+id/seekbar"/>
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_gravity="center_horizontal" android:orientation="vertical" android:background="@drawable/shape_dialog_bg" android:padding="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+    <RelativeLayout android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp">
+        <ImageView android:id="@+id/iv_loading" android:layout_width="65dp" android:layout_height="40dp" android:src="@drawable/sp_rotate_progressbar_style2" android:scaleType="fitCenter" android:layout_centerInParent="true"/>
+    </RelativeLayout>
+    <TextView android:textSize="12sp" android:textColor="#9a9b98" android:layout_gravity="center_horizontal" android:id="@+id/tv_load_dialog" android:padding="2dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/file_show_pro_title"/>
+</LinearLayout>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:id="@+id/act_edit_buttom_lvjing_layout" android:background="@color/white" android:visibility="gone" android:layout_width="match_parent" android:layout_height="167dp" android:layout_alignParentBottom="true">
+    <RelativeLayout android:gravity="center_vertical" android:orientation="vertical" android:visibility="visible" android:layout_width="match_parent" android:layout_height="127dp">
+        <HorizontalScrollView android:layout_gravity="center_vertical" android:scrollbars="none" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <LinearLayout android:layout_gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="95dp" android:layout_height="wrap_content">
+                    <RelativeLayout android:layout_gravity="center_horizontal" android:layout_width="79dp" android:layout_height="79dp">
+                        <ImageView android:id="@+id/recycle_item_photo_edit_one_kuang0" android:background="@color/color_black4" android:visibility="gone" android:layout_width="79dp" android:layout_height="79dp"/>
+                        <p008jp.p009co.cyberagent.android.gpuimage.GPUImageView android:id="@+id/recycle_item_photo_edit_one_image0" android:layout_width="75dp" android:layout_height="75dp" android:layout_centerInParent="true"/>
+                    </RelativeLayout>
+                    <TextView android:textSize="@dimen/text_size14" android:textColor="@color/color_black55" android:layout_gravity="center_horizontal" android:id="@+id/recycle_item_photo_edit_one_text0" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/text_size11" android:text="@string/file_edit_the_original_image2"/>
+                </LinearLayout>
+                <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="95dp" android:layout_height="wrap_content">
+                    <RelativeLayout android:layout_gravity="center_horizontal" android:layout_width="79dp" android:layout_height="79dp">
+                        <ImageView android:id="@+id/recycle_item_photo_edit_one_kuang1" android:background="@color/color_black4" android:visibility="gone" android:layout_width="79dp" android:layout_height="79dp"/>
+                        <p008jp.p009co.cyberagent.android.gpuimage.GPUImageView android:id="@+id/recycle_item_photo_edit_one_image1" android:layout_width="75dp" android:layout_height="75dp" android:layout_centerInParent="true"/>
+                    </RelativeLayout>
+                    <TextView android:textSize="@dimen/text_size14" android:textColor="@color/color_black55" android:layout_gravity="center_horizontal" android:id="@+id/recycle_item_photo_edit_one_text1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/text_size11" android:text="@string/file_edit_yellowing"/>
+                </LinearLayout>
+                <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="95dp" android:layout_height="wrap_content">
+                    <RelativeLayout android:layout_gravity="center_horizontal" android:layout_width="79dp" android:layout_height="79dp">
+                        <ImageView android:id="@+id/recycle_item_photo_edit_one_kuang2" android:background="@color/color_black4" android:visibility="gone" android:layout_width="79dp" android:layout_height="79dp"/>
+                        <p008jp.p009co.cyberagent.android.gpuimage.GPUImageView android:id="@+id/recycle_item_photo_edit_one_image2" android:layout_width="75dp" android:layout_height="75dp" android:layout_centerInParent="true"/>
+                    </RelativeLayout>
+                    <TextView android:textSize="@dimen/text_size14" android:textColor="@color/color_black55" android:layout_gravity="center_horizontal" android:id="@+id/recycle_item_photo_edit_one_text2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/text_size11" android:text="@string/file_edit_black_and_white"/>
+                </LinearLayout>
+                <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="95dp" android:layout_height="wrap_content">
+                    <RelativeLayout android:layout_gravity="center_horizontal" android:layout_width="79dp" android:layout_height="79dp">
+                        <ImageView android:id="@+id/recycle_item_photo_edit_one_kuang3" android:background="@color/color_black4" android:visibility="gone" android:layout_width="79dp" android:layout_height="79dp"/>
+                        <p008jp.p009co.cyberagent.android.gpuimage.GPUImageView android:id="@+id/recycle_item_photo_edit_one_image3" android:layout_width="75dp" android:layout_height="75dp" android:layout_centerInParent="true"/>
+                    </RelativeLayout>
+                    <TextView android:textSize="@dimen/text_size14" android:textColor="@color/color_black55" android:layout_gravity="center_horizontal" android:id="@+id/recycle_item_photo_edit_one_text3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/text_size11" android:text="@string/file_edit_sketch"/>
+                </LinearLayout>
+                <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="95dp" android:layout_height="wrap_content">
+                    <RelativeLayout android:layout_gravity="center_horizontal" android:layout_width="79dp" android:layout_height="79dp">
+                        <ImageView android:id="@+id/recycle_item_photo_edit_one_kuang4" android:background="@color/color_black4" android:visibility="gone" android:layout_width="79dp" android:layout_height="79dp"/>
+                        <p008jp.p009co.cyberagent.android.gpuimage.GPUImageView android:id="@+id/recycle_item_photo_edit_one_image4" android:layout_width="75dp" android:layout_height="75dp" android:layout_centerInParent="true"/>
+                    </RelativeLayout>
+                    <TextView android:textSize="@dimen/text_size14" android:textColor="@color/color_black55" android:layout_gravity="center_horizontal" android:id="@+id/recycle_item_photo_edit_one_text4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/text_size11" android:text="@string/file_edit_lomo"/>
+                </LinearLayout>
+                <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="95dp" android:layout_height="wrap_content">
+                    <RelativeLayout android:layout_gravity="center_horizontal" android:layout_width="79dp" android:layout_height="79dp">
+                        <ImageView android:id="@+id/recycle_item_photo_edit_one_kuang5" android:background="@color/color_black4" android:visibility="gone" android:layout_width="79dp" android:layout_height="79dp"/>
+                        <p008jp.p009co.cyberagent.android.gpuimage.GPUImageView android:id="@+id/recycle_item_photo_edit_one_image5" android:layout_width="75dp" android:layout_height="75dp" android:layout_centerInParent="true"/>
+                    </RelativeLayout>
+                    <TextView android:textSize="@dimen/text_size14" android:textColor="@color/color_black55" android:layout_gravity="center_horizontal" android:id="@+id/recycle_item_photo_edit_one_text5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/text_size11" android:text="@string/file_edit_freshness"/>
+                </LinearLayout>
+                <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="95dp" android:layout_height="wrap_content">
+                    <RelativeLayout android:layout_gravity="center_horizontal" android:layout_width="79dp" android:layout_height="79dp">
+                        <ImageView android:id="@+id/recycle_item_photo_edit_one_kuang6" android:background="@color/color_black4" android:visibility="gone" android:layout_width="79dp" android:layout_height="79dp"/>
+                        <p008jp.p009co.cyberagent.android.gpuimage.GPUImageView android:id="@+id/recycle_item_photo_edit_one_image6" android:layout_width="75dp" android:layout_height="75dp" android:layout_centerInParent="true"/>
+                    </RelativeLayout>
+                    <TextView android:textSize="@dimen/text_size14" android:textColor="@color/color_black55" android:layout_gravity="center_horizontal" android:id="@+id/recycle_item_photo_edit_one_text6" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/text_size11" android:text="@string/file_edit_relievo"/>
+                </LinearLayout>
+            </LinearLayout>
+        </HorizontalScrollView>
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="40dp" android:layout_alignParentBottom="true">
+        <View android:background="@color/ed" android:layout_width="match_parent" android:layout_height="1dp"/>
+        <RelativeLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="39dp">
+            <ImageView android:layout_gravity="left|center_vertical|center_horizontal|center" android:id="@+id/act_edit_buttom_lvjing_dismiss" android:padding="12dp" android:layout_width="40dp" android:layout_height="40dp" android:layout_marginLeft="19dp" android:src="@mipmap/ic_edit_cha" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" android:layout_marginStart="19dp" android:layout_alignParentStart="true"/>
+            <LinearLayout android:orientation="horizontal" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="39dp" android:layout_centerInParent="true">
+                <TextView android:textSize="15dp" android:textColor="@color/color_black55" android:gravity="center" android:layout_width="110dp" android:layout_height="39dp" android:text="@string/file_edit_a_filter"/>
+            </LinearLayout>
+            <ImageView android:layout_gravity="right|center_vertical|center_horizontal|center" android:id="@+id/act_edit_buttom_lvjing_ok" android:padding="10dp" android:layout_width="40dp" android:layout_height="40dp" android:layout_marginRight="20dp" android:src="@mipmap/ic_edit_over" android:layout_alignParentRight="true"/>
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

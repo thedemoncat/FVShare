@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="horizontal" android:id="@+id/frag_content_parameter_display_linear" android:visibility="visible" android:layout_width="284dp" android:layout_height="30dp" android:layout_alignParentBottom="true">
+    <LinearLayout android:orientation="vertical" android:layout_width="284dp" android:layout_height="30dp">
+        <RelativeLayout android:layout_gravity="center_horizontal" android:orientation="horizontal" android:background="@drawable/fragment_content_scale_linear_background" android:layout_width="284dp" android:layout_height="30dp">
+            <LinearLayout android:orientation="horizontal" android:layout_width="284dp" android:layout_height="30dp" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true">
+                <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:id="@+id/fragment_content_parameter_display_linear_ev" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+                    <TextView android:textSize="10dp" android:textColor="@color/white" android:layout_gravity="center_horizontal" android:id="@+id/horizontal_parameter_display_ev_text_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="EV"/>
+                    <TextView android:textSize="10dp" android:textColor="@color/white" android:layout_gravity="center_horizontal" android:id="@+id/horizontal_parameter_display_ev_textview" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0"/>
+                </LinearLayout>
+                <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:id="@+id/fragment_content_parameter_display_linear_shutter" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+                    <TextView android:textSize="10dp" android:textColor="@color/white" android:layout_gravity="center_horizontal" android:id="@+id/horizontal_parameter_display_shutter_text_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="SHUTTER"/>
+                    <TextView android:textSize="10dp" android:textColor="@color/white" android:layout_gravity="center_horizontal" android:id="@+id/horizontal_parameter_display_shutter_textview" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="1/50"/>
+                </LinearLayout>
+                <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:id="@+id/fragment_content_parameter_display_linear_iso" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+                    <TextView android:textSize="10dp" android:textColor="@color/white" android:layout_gravity="center_horizontal" android:id="@+id/horizontal_parameter_display_iso_text_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="ISO"/>
+                    <TextView android:textSize="10dp" android:textColor="@color/white" android:layout_gravity="center_horizontal" android:id="@+id/horizontal_parameter_display_iso_textview" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="55"/>
+                </LinearLayout>
+                <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:id="@+id/fragment_content_parameter_display_linear_wb" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+                    <TextView android:textSize="10dp" android:textColor="@color/white" android:layout_gravity="center_horizontal" android:id="@+id/horizontal_parameter_display_wb_text_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="WB"/>
+                    <TextView android:textSize="10dp" android:textColor="@color/white" android:layout_gravity="center_horizontal" android:id="@+id/horizontal_parameter_display_wb_textview" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="58" android:maxLength="8"/>
+                </LinearLayout>
+                <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:id="@+id/fragment_content_parameter_display_linear_mf" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+                    <TextView android:textSize="10dp" android:textColor="@color/white" android:layout_gravity="center_horizontal" android:id="@+id/horizontal_parameter_display_mf_text_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="MF"/>
+                    <TextView android:textSize="10dp" android:textColor="@color/white" android:layout_gravity="center_horizontal" android:id="@+id/horizontal_parameter_display_mf_textview" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0.0"/>
+                </LinearLayout>
+                <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:id="@+id/fragment_content_parameter_display_linear_wt" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+                    <TextView android:textSize="10dp" android:textColor="@color/white" android:layout_gravity="center_horizontal" android:id="@+id/horizontal_parameter_display_wt_text_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="WT"/>
+                    <TextView android:textSize="10dp" android:textColor="@color/white" android:layout_gravity="center_horizontal" android:id="@+id/horizontal_parameter_display_wt_textview" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="1.0"/>
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

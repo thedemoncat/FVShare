@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:id="@+id/act_edit_buttom_caijian_layout" android:background="@color/white" android:visibility="gone" android:layout_width="match_parent" android:layout_height="167dp" android:layout_alignParentBottom="true">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/act_edit_buttom_caijian_layout_caijian" android:visibility="visible" android:layout_width="match_parent" android:layout_height="127dp">
+        <HorizontalScrollView android:scrollbars="none" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <RadioGroup android:gravity="center_vertical" android:orientation="horizontal" android:padding="25dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+                <RadioButton android:gravity="bottom" android:id="@+id/id_edit_buttom_caijian_yuanshi" android:layout_marginLeft="20dp" android:layout_marginRight="20dp" android:checked="true" android:text="原始" android:drawableTop="@drawable/xml_radiobutton_caijian_img1" style="@style/MyEditImgRadioBtStyle"/>
+                <RadioButton android:gravity="bottom" android:id="@+id/id_edit_buttom_caijian_ziyou" android:layout_marginLeft="20dp" android:layout_marginRight="20dp" android:text="自由" android:drawableTop="@drawable/xml_radiobutton_caijian_img2" style="@style/MyEditImgRadioBtStyle"/>
+                <RadioButton android:gravity="bottom" android:id="@+id/id_edit_buttom_caijian_11" android:layout_marginLeft="20dp" android:layout_marginRight="20dp" android:text="1:1" android:drawableTop="@drawable/xml_radiobutton_caijian_img3" style="@style/MyEditImgRadioBtStyle"/>
+                <RadioButton android:gravity="bottom" android:id="@+id/id_edit_buttom_caijian_34" android:layout_marginLeft="20dp" android:layout_marginRight="20dp" android:text="3:4" android:drawableTop="@drawable/xml_radiobutton_caijian_img4" style="@style/MyEditImgRadioBtStyle"/>
+                <RadioButton android:gravity="bottom" android:id="@+id/id_edit_buttom_caijian_43" android:layout_marginLeft="20dp" android:layout_marginRight="20dp" android:text="4:3" android:drawableTop="@drawable/xml_radiobutton_caijian_img5" style="@style/MyEditImgRadioBtStyle"/>
+                <RadioButton android:gravity="bottom" android:id="@+id/id_edit_buttom_caijian_916" android:layout_marginLeft="20dp" android:layout_marginRight="20dp" android:text="9:16" android:drawableTop="@drawable/xml_radiobutton_caijian_img6" style="@style/MyEditImgRadioBtStyle"/>
+                <RadioButton android:gravity="bottom" android:id="@+id/id_edit_buttom_caijian_169" android:layout_marginLeft="20dp" android:layout_marginRight="20dp" android:text="16:9" android:drawableTop="@drawable/xml_radiobutton_caijian_img7" style="@style/MyEditImgRadioBtStyle"/>
+            </RadioGroup>
+        </HorizontalScrollView>
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/act_edit_buttom_xuanzhuan_layout" android:visibility="gone" android:layout_width="match_parent" android:layout_height="127dp">
+        <HorizontalScrollView android:scrollbars="none" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="25dp" android:layout_marginRight="25dp">
+                <LinearLayout android:gravity="center" android:layout_width="65dp" android:layout_height="wrap_content">
+                    <ImageView android:background="@mipmap/ic_edit_xuanzhuan_huanyuan" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                </LinearLayout>
+                <LinearLayout android:gravity="center" android:layout_width="65dp" android:layout_height="wrap_content">
+                    <ImageView android:background="@mipmap/ic_edit_xuanzhuan_xiangzuo" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                </LinearLayout>
+                <LinearLayout android:gravity="center" android:layout_width="65dp" android:layout_height="wrap_content">
+                    <ImageView android:background="@mipmap/ic_edit_xuanzhuan_xiangyou" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                </LinearLayout>
+                <LinearLayout android:gravity="center" android:layout_width="65dp" android:layout_height="wrap_content">
+                    <ImageView android:background="@mipmap/ic_edit_xuanzhuan_zuoyou" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                </LinearLayout>
+                <LinearLayout android:gravity="center" android:layout_width="65dp" android:layout_height="wrap_content">
+                    <ImageView android:background="@mipmap/ic_edit_xuanzhuan_shangxia" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                </LinearLayout>
+            </LinearLayout>
+        </HorizontalScrollView>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="40dp" android:layout_alignParentBottom="true">
+        <View android:background="@color/ed" android:layout_width="match_parent" android:layout_height="1dp"/>
+        <RelativeLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="39dp">
+            <ImageView android:layout_gravity="left|center_vertical|center_horizontal|center" android:id="@+id/act_edit_buttom_caijian_dismiss" android:padding="12dp" android:layout_width="40dp" android:layout_height="40dp" android:layout_marginLeft="19dp" android:src="@mipmap/ic_edit_cha" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" android:layout_marginStart="19dp" android:layout_alignParentStart="true"/>
+            <LinearLayout android:orientation="horizontal" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="39dp" android:layout_centerInParent="true">
+                <TextView android:textSize="15dp" android:textColor="@color/color_black55" android:gravity="center" android:id="@+id/act_edit_buttom_caijian_btCai" android:layout_width="110dp" android:layout_height="39dp" android:text="裁剪"/>
+                <TextView android:textSize="15dp" android:textColor="@color/color_black55" android:gravity="center" android:id="@+id/act_edit_buttom_caijian_btXuan" android:layout_width="110dp" android:layout_height="39dp" android:text="旋转"/>
+            </LinearLayout>
+            <ImageView android:layout_gravity="right|center_vertical|center_horizontal|center" android:padding="10dp" android:layout_width="40dp" android:layout_height="40dp" android:layout_marginRight="20dp" android:src="@mipmap/ic_edit_over" android:layout_alignParentRight="true"/>
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@color/f6" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include layout="@layout/layout_video_editing_title"/>
+    <com.freevisiontech.fvmobile.utils.MyScrollView android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+            <RelativeLayout android:layout_width="match_parent" android:layout_height="211dp">
+                <VideoView android:id="@+id/act_video_editing_each_vv_video" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_centerInParent="true"/>
+                <TextView android:textSize="@dimen/text_size12" android:textColor="@color/white" android:background="@drawable/edit_video_black_round_bg" android:padding="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/text_size15" android:text="0:22/1:20" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true"/>
+            </RelativeLayout>
+            <LinearLayout android:gravity="center" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="53dp">
+                <ImageView android:id="@+id/act_video_editing_zhanting" android:background="@mipmap/ic_video_editing_zanting" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                <ImageView android:id="@+id/act_video_editing_bofang" android:background="@mipmap/ic_video_editing_bofang" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            </LinearLayout>
+            <LinearLayout android:layout_gravity="center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <ImageView android:id="@+id/act_video_editing_item_each_imageview" android:layout_width="50dp" android:layout_height="50dp" android:scaleType="fitXY"/>
+                <ImageView android:id="@+id/act_video_editing_item_each_imageview1" android:layout_width="50dp" android:layout_height="50dp" android:scaleType="fitXY"/>
+                <ImageView android:id="@+id/act_video_editing_item_each_imageview2" android:layout_width="50dp" android:layout_height="50dp" android:scaleType="fitXY"/>
+            </LinearLayout>
+            <View android:background="@color/c5" android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginTop="40dp"/>
+            <HorizontalScrollView android:scrollbars="none" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="42dp">
+                <RadioGroup android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <RadioButton android:gravity="bottom" android:id="@+id/id_edit_buttom_video_edit_each_cai" android:layout_marginLeft="20dp" android:layout_marginRight="20dp" android:text="裁剪" android:drawableTop="@drawable/xml_radiobutton_video_edit_img1" style="@style/MyEditImgRadioBtStyle"/>
+                    <RadioButton android:gravity="bottom" android:id="@+id/id_edit_buttom_video_edit_each_duibi" android:layout_marginLeft="20dp" android:layout_marginRight="20dp" android:checked="true" android:text="对比度" android:drawableTop="@drawable/xml_radiobutton_tiaojie_img1" style="@style/MyEditImgRadioBtStyle"/>
+                    <RadioButton android:gravity="bottom" android:id="@+id/id_edit_buttom_video_edit_each_liang" android:layout_marginLeft="20dp" android:layout_marginRight="20dp" android:text="亮度" android:drawableTop="@drawable/xml_radiobutton_tiaojie_img2" style="@style/MyEditImgRadioBtStyle"/>
+                    <RadioButton android:gravity="bottom" android:id="@+id/id_edit_buttom_video_edit_each_bao" android:layout_marginLeft="20dp" android:layout_marginRight="20dp" android:text="饱和度" android:drawableTop="@drawable/xml_radiobutton_tiaojie_img3" style="@style/MyEditImgRadioBtStyle"/>
+                    <RadioButton android:gravity="bottom" android:id="@+id/id_edit_buttom_video_edit_each_yingliang" android:layout_marginLeft="20dp" android:layout_marginRight="20dp" android:text="音量" android:drawableTop="@drawable/xml_radiobutton_video_edit_img5" style="@style/MyEditImgRadioBtStyle"/>
+                    <RadioButton android:gravity="bottom" android:id="@+id/id_edit_buttom_video_edit_each_music" android:layout_marginLeft="20dp" android:layout_marginRight="20dp" android:text="音量" android:drawableTop="@drawable/xml_radiobutton_video_edit_img6" style="@style/MyEditImgRadioBtStyle"/>
+                </RadioGroup>
+            </HorizontalScrollView>
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="108dp">
+                <TextView android:textSize="15dp" android:textColor="@color/color_black55" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/text_size15" android:text="@string/file_edit_intensity_adjusting"/>
+                <SeekBar android:layout_gravity="center_horizontal" android:id="@+id/edit_item_each_seekbar" android:paddingLeft="1dp" android:paddingRight="1dp" android:layout_width="225dp" android:layout_height="20dp" android:maxHeight="2dp" android:progressDrawable="@drawable/seekbar_style_black4" android:minHeight="2dp" android:thumb="@mipmap/ic_seekbar_thumb" android:layout_centerHorizontal="true"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="match_parent" android:layout_height="49dp">
+                <View android:background="@color/c5" android:layout_width="match_parent" android:layout_height="1dp"/>
+                <RelativeLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="39dp">
+                    <ImageView android:layout_gravity="left|center_vertical|center_horizontal|center" android:id="@+id/act_edit_buttom_tiaojie_dismiss" android:padding="12dp" android:layout_width="40dp" android:layout_height="40dp" android:layout_marginLeft="19dp" android:src="@mipmap/ic_edit_cha" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" android:layout_marginStart="19dp" android:layout_alignParentStart="true"/>
+                    <LinearLayout android:orientation="horizontal" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="39dp" android:layout_centerInParent="true">
+                        <TextView android:textSize="15dp" android:textColor="@color/color_black55" android:gravity="center" android:layout_width="110dp" android:layout_height="39dp" android:text="应用到所有视频"/>
+                    </LinearLayout>
+                    <ImageView android:layout_gravity="right|center_vertical|center_horizontal|center" android:padding="10dp" android:layout_width="40dp" android:layout_height="40dp" android:layout_marginRight="20dp" android:src="@mipmap/ic_edit_over" android:layout_alignParentRight="true"/>
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </com.freevisiontech.fvmobile.utils.MyScrollView>
+</LinearLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <p008jp.p009co.cyberagent.android.gpuimage.GPUImageView android:id="@+id/recycle_item_photo_edit_one_image" android:layout_width="75dp" android:layout_height="75dp" android:layout_marginLeft="10dp" android:layout_marginRight="10dp"/>
+        <TextView android:textSize="@dimen/text_size14" android:textColor="@color/color_black55" android:layout_gravity="center_horizontal" android:id="@+id/recycle_item_photo_edit_one_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/text_size11" android:text="自然"/>
+    </LinearLayout>
+</LinearLayout>

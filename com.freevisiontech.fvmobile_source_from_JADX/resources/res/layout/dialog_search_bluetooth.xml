@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:background="@drawable/sp_white50_round5_bg" android:layout_width="match_parent" android:layout_height="270dp" android:layout_marginLeft="15dp" android:layout_marginRight="15dp" android:layout_centerInParent="true">
+        <RelativeLayout android:id="@+id/rl_close" android:layout_width="match_parent" android:layout_height="45dp">
+            <TextView android:textSize="16dp" android:textColor="@color/color_black55" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/bluetooth" android:layout_centerInParent="true"/>
+            <ImageView android:id="@+id/iv_close" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15dp" android:src="@mipmap/ic_home_back" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+        </RelativeLayout>
+        <View android:background="#19000000" android:layout_width="match_parent" android:layout_height="1dp" android:layout_below="@+id/rl_close"/>
+        <RelativeLayout android:id="@+id/rl_search" android:layout_width="match_parent" android:layout_height="45dp" android:layout_below="@+id/rl_close">
+            <TextView android:textSize="14dp" android:textColor="@color/color_black55" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:text="@string/searched_device" android:layout_centerVertical="true"/>
+            <ImageView android:id="@+id/iv_search_device" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15dp" android:src="@mipmap/shuaxin" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+        </RelativeLayout>
+        <View android:background="#19000000" android:layout_width="match_parent" android:layout_height="1dp" android:layout_below="@+id/rl_search"/>
+        <TextView android:textColor="@color/color_black55" android:gravity="center" android:id="@+id/tv_no_device" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:layout_marginTop="55dp" android:layout_marginRight="15dp" android:text="@string/lable_no_bluetooth_device" android:layout_below="@+id/rl_search"/>
+        <ListView android:id="@+id/deviceLv" android:visibility="visible" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="wrap_content" android:divider="@color/color_line_listview2" android:dividerHeight="1dp" android:layout_below="@+id/rl_search"/>
+    </RelativeLayout>
+</RelativeLayout>
